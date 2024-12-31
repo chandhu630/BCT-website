@@ -1,0 +1,171 @@
+:root {
+    --primary-green: #16A34A;
+    --primary-black: #111827;
+    --light-green: rgba(22, 163, 74, 0.1);
+  }
+  
+  .rehab-container {
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    transform: translateY(100px);
+    color: var(--primary-black);
+  }
+  
+  /* Hero Section */
+  .rehab-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #F0F8FF;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+  }
+  
+  .hero-icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .rehab-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  /* Image Gallery */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 4rem;
+  }
+  
+  section h2 {
+    color: var(--primary-black);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .section-intro {
+    text-align: center;
+    color: #4B5563;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Services Grid */
+  .services-grid, .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .service-card, .benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover, .benefit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-icon, .benefit-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--light-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-icon svg, .benefit-icon svg {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+  }
+  
+  .service-card h3, .benefit-card h3 {
+    color: var(--primary-black);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card p, .benefit-card p {
+    color: #4B5563;
+    line-height: 1.6;
+  }
+  
+  /* Partners Section */
+  .partners {
+    text-align: center;
+  }
+  
+  .partners-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .partners-grid img {
+    height: 60px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .partners-grid img:hover {
+    opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .rehab-hero {
+      padding: 2rem 1rem;
+    }
+  
+    .rehab-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .image-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .services-grid, .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }

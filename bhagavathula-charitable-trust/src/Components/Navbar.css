@@ -1,0 +1,227 @@
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-logo {
+    /* color: #28a745; */
+    color: #15926A;;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .about{
+    text-decoration: none !important;
+    color: black !important;
+  }
+  .nav-item {
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: block;
+  }
+  
+  .nav-link:hover {
+    color: black;
+    /* background-color: #15926A; */
+    border-bottom: 2px solid #15926A;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    display: none;
+    z-index: 1001;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+  .dropdown-menu p {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu p:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-menu p span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #15926A;
+  }
+  
+  /* Sub-dropdown styles */
+  .sub-dropdown {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .sub-dropdown li {
+    padding: 0.3rem 0;
+  }
+  
+  .sub-dropdown a {
+    padding: 0.3rem 0;
+    font-size: 0.9em;
+  }
+  
+  /* Support button styles */
+  .support-btn {
+    background-color: #15926A;
+    /* background-color: #DA545A; */
+    color: #fff !important;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .support-btn:hover {
+    background-color: #15926A;
+  }
+  
+  /* Hamburger menu styles */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile responsive styles */
+  @media screen and (max-width: 992px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 2rem 0;
+      height: calc(100vh - 70px);
+      overflow-y: auto;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    .nav-item {
+      margin: 1rem 0;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      background-color: #f8f9fa;
+    }
+  
+    .sub-dropdown {
+      background-color: #fff;
+      margin: 0;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .nav-logo {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .support-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }

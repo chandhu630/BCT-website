@@ -1,0 +1,180 @@
+/* Wrapper with Background */
+.legacy-wrapper {
+    /* min-height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px;
+  }
+  /* Balloon Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) translateX(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px) translateX(200px);
+      opacity: 0;
+    }
+  }
+  
+  .balloon {
+    position: absolute;
+    bottom: -100px;
+    width: 60px;
+    height: 80px;
+    background: orange;
+    border-radius: 50%;
+    animation: float 8s infinite ease-in-out;
+    z-index: -1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .balloon:nth-child(2) {
+    background: green;
+    width: 80px;
+    height: 100px;
+    left: 20%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+  }
+  
+  .balloon:nth-child(3) {
+    background: orange;
+    width: 50px;
+    height: 70px;
+    left: 40%;
+    animation-duration: 12s;
+    animation-delay: 4s;
+  }
+  
+  .balloon:nth-child(4) {
+    background: green;
+    width: 90px;
+    height: 120px;
+    left: 60%;
+    animation-duration: 14s;
+    animation-delay: 6s;
+  }
+  
+  .balloon:nth-child(5) {
+    background: orange;
+    width: 70px;
+    height: 90px;
+    left: 80%;
+    animation-duration: 16s;
+    animation-delay: 8s;
+  }
+  
+  /* Header */
+  .legacy-header {
+    color: green;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Content Section */
+  .legacy-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Image Section */
+  .image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .legacy-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .legacy-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Text Section */
+  .text-container {
+    flex: 2;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .text-container p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  /* Button Container */
+.button-container {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+  }
+  
+  /* Styled Button */
+  .styled-button {
+    background-color: green;
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover Effect */
+  .styled-button:hover {
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    background-color: green;
+  }
+  
+  /* Active Effect */
+  .styled-button:active {
+    transform: translateY(2px); /* Downward movement on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  .custom-icon {
+    color: orange;
+  }
+  .styledpdfbutton
+  {
+    
+    color: orange; /* Text color */
+    border: none; /* Remove border */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    border:2px solid  green;
+    background-color: white;
+
+  }
