@@ -1,0 +1,118 @@
+/* Container */
+.timeline-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* Title */
+  .timeline-title {
+    font-size: 2.5rem;
+    color: #15926a;
+    margin-bottom: 30px;
+  }
+  
+  /* Timeline Dots */
+  .timeline-dots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .timeline-dot:hover {
+    background: #d1f1d1;
+  }
+  
+  .timeline-dot.active {
+    background: #81c784;
+    border-color: #15926a;
+    color: white;
+  }
+  
+  /* Content */
+  .timeline-content {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #f9f9f9;
+    border: 3px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  .timeline-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .timeline-content h2 {
+    font-size: 2rem;
+    color: #15926a;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Buttons */
+  .timeline-btn {
+    background: #ffffff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .timeline-btn.green {
+    background: #15926a;
+  }
+  
+  .timeline-btn.green:hover {
+    background: darkgreen;
+  }
+  
+  .timeline-btn.red {
+    background: #c64848;
+    border-radius: 50%;
+    
+  }
+  
+  .timeline-btn.red:hover {
+    background: darkred;
+  }
+  

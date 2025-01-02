@@ -1,0 +1,231 @@
+.community-wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 70px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    color: #15926A;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .hero-image {
+    width: 65%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 40%;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  /* Stats Banner */
+  .stats-banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background: #ffffff;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #15926A;
+  }
+  
+  .stat-label {
+    color: #15926A;
+    font-size: 1.1rem;
+  }
+  
+  /* Initiatives Section */
+  .initiatives {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .initiative-left {
+    flex: 1;
+  }
+  
+  .initiative-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .initiative-card {
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .initiative-card.primary {
+    /* background: #2c3e50; */
+    color: black;
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 0.5px solid #ccc;
+  }
+  
+  .initiative-card.secondary {
+    /* background: #34495e; */
+    /* color: black; */
+    flex: 1;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 0.5px solid #ccc;
+  }
+  .primary h2,.secondary h2{
+    color: #15926A;
+  }
+  .secondary p{
+    color: black;
+  }
+  .initiative-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  /* Programs Grid */
+  .programs {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .programs h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color:#15926A;
+  }
+  
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .program-item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 0.5px solid #ccc;
+  }
+  
+  .program-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .program-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-image {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .hero-textCommunity {
+      position: relative;
+      width: 100%;
+      margin-top: 30px;
+      bottom: 0;
+      
+    }
+  
+    .initiatives {
+      flex-direction: column;
+    }
+  
+    .stats-banner {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 40px 20px;
+    }
+  
+    .programs-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .stat-number {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-image {
+      height: 200px;
+    }
+  
+    .initiative-card {
+      padding: 20px;
+    }
+  }

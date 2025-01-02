@@ -1,0 +1,192 @@
+.contact-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #15926a;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Contact Info Cards */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  /* align-items: center;
+  justify-content: center; */
+  margin-bottom: 40px;
+}
+
+.contact_card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact_card i {
+  font-size:1.5 rem;
+  color: #c64848; /* Orange color */
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact_card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.phoneNumber
+{
+  text-align: center;
+  margin:auto;
+}
+
+.contact_card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+/* Form and Map Section */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: #15926a;
+  margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-textarea {
+  height: 100px;
+}
+
+.submit-button {
+  background: #15926a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #c64848;
+}
+
+/* Contact Map */
+.contact-map {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map h2 {
+  color: #15926a;
+  margin-bottom: 20px;
+}
+
+.contact-map img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #c64848;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.social-icon:hover {
+  color: #15926a;
+}
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_card i {
+    font-size: 1.5rem;
+  }
+
+  .submit-button {
+    padding: 8px 16px;
+  }
+}
+
+.contact-info a {
+  color: #15926a;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #c64848; 
+}
+
+
+.social-icon:hover {
+  color: #15926a; /* Orange color on hover */
+}
