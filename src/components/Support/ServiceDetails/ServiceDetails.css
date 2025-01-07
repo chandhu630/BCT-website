@@ -1,0 +1,57 @@
+/* General styling for the Service Details page */
+.service-details-container {
+    padding: 20px;
+    max-width: 1200px;
+    transform: translateY(80px);
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .details-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .details-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  /* Styling for content area */
+  .details-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Image section */
+  .details-images {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .details-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Description section */
+  .details-description {
+    flex: 1 1 55%;
+    background-color: #DDF6E9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-description p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  

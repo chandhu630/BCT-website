@@ -1,0 +1,302 @@
+
+
+   /* Base Styles */
+
+.homepage {
+  background-color: #f2f1e2;
+}
+
+/* Hero Section */
+.hero-section_agri {
+  position: relative;
+  /* background-image: url('/public/imgs/agri/womenjpeg.jpeg');  */
+  background-image: url('/public/imgs/agri/ram.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  height: 60vh; /* Full-screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  filter:brightness(1.2);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+  z-index: 1;
+}
+
+.hero-content_agri {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  margin-top: 6rem;
+}
+
+.hero-content_agri h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero-content_agri p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.hero-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color:  #EC4342;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #EC4330;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: #147169  ;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #147150;
+  color: black;
+}
+
+/* Statistics Section */
+.statistics-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.stat-item {
+  background-color:rgba(0, 0, 0, 0.5);; /* Semi-transparent white */
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+}
+
+.stat-item h2 {
+  font-size: 2rem;
+  color: #147169;
+}
+
+.stat-item p {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-section_agri {
+    height: 80vh;
+  }
+
+  .hero-content_agri h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content_agri p {
+    font-size: 1rem;
+  }
+
+  .statistics-section {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    max-width: 200px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section_agri {
+    height: 75vh;
+  }
+
+  .hero-content_agri h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content_agri p {
+    font-size: 0.9rem;
+  }
+
+  .stat-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+.programs {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.programs h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color:#15926A;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.program-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 0.5px solid #ccc;
+}
+
+.program-item:hover {
+  transform: translateY(-5px);
+}
+
+.program-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-textCommunity {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    bottom: 0;
+    
+  }
+
+  .initiatives {
+    flex-direction: column;
+  }
+
+  .stats-banner {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  .initiative-card {
+    padding: 20px;
+  }
+}
+
+
+
+.about_kvk_section_Com{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about_kvk_image_Com img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about_kvk_content_Com{
+  flex: 1;
+}
+
+.about_kvk_content_Com h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about_kvk_content_Com p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
