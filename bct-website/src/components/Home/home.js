@@ -78,17 +78,18 @@ const Home = () => {
   ];
 
   return (
-    <div className="container">
+    
+    <div className="container_home">
       <div className="displayDiv">
         <div className="text-container">
-          <div className="heading">Transforming Rural Lives</div>
+          <div className="heading_home">Transforming Rural Lives</div>
           <div className="subheading">Empowering Communities</div>
-          <p className="description">
+          <p style={{color:"rgb(241, 237, 161)"}} className="description">
             Building sustainable futures through education, agriculture, and skill development in Visakhapatnam's villages. Together, we're creating models of learning and growth.
           </p>
           <div className="buttons">
-            <a href="#" className="button button-primary">Support Our Cause</a>
-            <a href="#" className="button button-secondary">Learn More</a>
+            <a href="#" className=" buttonHome button-primaryhome">Support Our Cause</a>
+            <a href="#" className=" buttonHome button-secondaryhome">Learn More</a>
           </div>
         </div>
         <div className="card-container">

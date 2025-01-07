@@ -12,6 +12,7 @@
     font-size: 2.5rem;
     color: #15926a;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
   
   /* Timeline Dots */
@@ -26,11 +27,10 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #e0e0e0;
+    background:  #147169;
     border: 2px solid transparent;
     font-size: 1rem;
     font-weight: bold;
-    color: #555;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
@@ -40,8 +40,8 @@
   }
   
   .timeline-dot.active {
-    background: #81c784;
-    border-color: #15926a;
+    background: #EC4342;
+    border-color: #a81111;
     color: white;
   }
   
@@ -89,7 +89,7 @@
     background: #ffffff;
     color: white;
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 15px 15px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -99,11 +99,11 @@
   }
   
   .timeline-btn.green {
-    background: #15926a;
+    background:  #147169;
   }
   
   .timeline-btn.green:hover {
-    background: darkgreen;
+    background:  #147169;
   }
   
   .timeline-btn.red {

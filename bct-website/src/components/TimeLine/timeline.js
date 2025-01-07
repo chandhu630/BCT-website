@@ -60,7 +60,7 @@ const Timeline = () => {
             handleYearChange(years[(years.indexOf(selectedYear) - 1 + years.length) % years.length])
           }
         >
-          &lt; {/* Less than symbol for "Previous" */}
+        <i class="fa-solid fa-angle-left"></i>
         </button>
 
         <div className="timeline-text">
@@ -75,7 +75,7 @@ const Timeline = () => {
             handleYearChange(years[(years.indexOf(selectedYear) + 1) % years.length])
           }
         >
-          &gt; {/* Greater than symbol for "Next" */}
+         <i class="fa-solid fa-angle-right"></i> 
         </button>
       </div>
     </div>

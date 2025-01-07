@@ -32,7 +32,7 @@ const LegacyPage = () => {
         {/* Text Section */}
         <div className="text-container">
           <p>
-            <strong style={{ color: "orange" }}>Dr. BV Parameswara Rao </strong>
+            <strong style={{ color: "#EC4342" }}>Dr. BV Parameswara Rao </strong>
             spent his growing years in the village of Dimili and Visakhapatnam.
             Greatly influenced by the knowledge he saw in common simple
             villagers, he went on to do his PhD in Nuclear Sciences at Penn

@@ -150,7 +150,7 @@ const BlogPage = () => {
     {
       id: 6,
       title: "Central CAG meeting held",
-      excerpt: "Formulated to solve problems in their villages, Community Action Groups comprise of local leaders.",
+      excerpt: "Formulated to solve problems in their villages, Community Action Groups comprise of.",
       content: "TypeScript is a superset of JavaScript that adds static typing...",
       image: "imgs/cc.png",
       date: "2024-01-07",
@@ -166,7 +166,7 @@ const BlogPage = () => {
     {
       id: 8,
       title: "Comprehensive Education Initiative at Paderu",
-      excerpt: "BCT initiated a 10-day teachers training program for government school teachers in tribal Paderu. ",
+      excerpt: "BCT initiated a 10-day teachers training program for government school teachers in  ",
       content: "TypeScript is a superset of JavaScript that adds static typing...",
       image: "imgs/student.png",
       date: "2024-01-07",
@@ -192,8 +192,8 @@ const BlogPage = () => {
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-cardpage">
             <img src={post.image} alt={post.title} className="blog-image" />
-            <h2 className="blog-titlepage">{post.title}</h2>
             <p className="blog-date">Published: {post.date}</p>
+            <h2 className="blog-titlepage">{post.title}</h2>
             <p className="blog-excerpt">{post.excerpt}</p>
             <button
               className="read-more-btn"

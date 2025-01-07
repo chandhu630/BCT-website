@@ -3,6 +3,7 @@ import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -31,25 +32,28 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="footer-title">Quick Links</h4>
           <ul className="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Projects</a></li>
-            <li><a href="#">Impact Stories</a></li>
-            <li><a href="#">Get Involved</a></li>
-            <li><a href="#">Contact Us</a></li>
+
+            <li><Link to ="/about">About Us</Link></li>
+            <li><Link to ="/trust-areas">Trust Areas</Link></li>
+            <li><Link to ="/blog">Blogs</Link></li>
+            <li><Link to ="/support">Support Us</Link></li>
+            <li><Link to ="/contact">Contact Us</Link></li>
+           
+            
           </ul>
         </div>
 
         {/* Contact Info Section */}
-        <div className="footer-section">
+        <div className="footer-section " style={{color:""}}>
           <h4 className="footer-title">Contact Info</h4>
           <p>
-            <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> 123 NGO Street, City Name, Country
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> Bhagavatula Charitable Trust Eco Rejuvenation Centre Haripuram – 531061 Visakhapatnam district
           </p>
           <p>
-            <FontAwesomeIcon icon={faEnvelope} className="icon" /> info@ngoname.org
+            <FontAwesomeIcon icon={faEnvelope} className="icon" /> info@bctindia.org
           </p>
           <p>
-            <FontAwesomeIcon icon={faPhone} className="icon" /> +1 234 567 890
+            <FontAwesomeIcon icon={faPhone} className="icon" /> +91 8500359819
           </p>
         </div>
 

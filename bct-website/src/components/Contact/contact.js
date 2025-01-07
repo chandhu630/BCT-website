@@ -15,7 +15,7 @@ const ContactUs = () => {
       {/* Contact Info Cards */}
       <section className="contact-info">
         <div className="contact_card">
-          <i  style={{backgroundColor:"#2d6a4f",borderRadius:"50%",padding:"15px"}} className="fas fa-map-marker-alt"></i>
+          <i  style={{fontSize:"30px",borderRadius:"50%",padding:"15px"}} className="fas fa-map-marker-alt"></i>
           <h3>Eco Rejuvenation Center</h3>
           <p>
             <a 
@@ -29,7 +29,7 @@ const ContactUs = () => {
         </div>
 
         <div className="contact_card contact_center">
-          <i style={{backgroundColor:"#2d6a4f",borderRadius:"50%",padding:"15px"}} className="fas fa-phone-alt"></i>
+          <i style={{fontSize:"30px",borderRadius:"50%",padding:"15px"}} className="fas fa-phone-alt"></i>
           <h3>Phone Number</h3>
           <p>
             <a className="phoneNumber" href="tel:+918500359819">+91 8500359819</a>
@@ -37,7 +37,7 @@ const ContactUs = () => {
         </div>
 
         <div className="contact_card contact_center">
-          <i  style={{backgroundColor:"#2d6a4f",borderRadius:"50%",padding:"15px"}} className="fas fa-envelope"></i>
+          <i  style={{fontSize:"30px",borderRadius:"50%",padding:"15px"}} className="fas fa-envelope"></i>
           <h3>Email</h3>
           <p>
             <a className="phoneNumber" href="mailto:info@bctindia.org">info@bctindia.org</a>
@@ -45,7 +45,7 @@ const ContactUs = () => {
         </div>
 
         <div className="contact_card">
-          <i  style={{backgroundColor:"#2d6a4f",borderRadius:"50%",padding:"15px"}} className="fas fa-building"></i>
+          <i  style={{fontSize:"30px",borderRadius:"50%",padding:"15px"}} className="fas fa-building"></i>
           <h3>Liaison Office</h3>
           <p>
             <a 
@@ -62,7 +62,7 @@ const ContactUs = () => {
       {/* Form and Map Section */}
       <section className="contact-details">
         <div className="contact-map">
-          <h2>Follow Us</h2>
+          <h2 style={{color:"#EC4342"}}>Follow Us</h2>
           <img src="./imgs/contact.png" alt="Contact" />
           <div className="social-links">
             <a href="https://www.facebook.com/bctorg/" className="social-icon">
@@ -80,7 +80,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="contact-form">
-          <h2>Get in Touch</h2>
+          <h2 >Get in Touch</h2>
           <form>
             <input
               type="text"

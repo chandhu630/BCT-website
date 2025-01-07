@@ -1,20 +1,18 @@
-:root {
+/* :root {
     --primary-green: #16A34A;
     --primary-black: #111827;
     --light-green: rgba(22, 163, 74, 0.1);
   }
   
   .rehab-container {
-    /* max-width: 1200px; */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 2rem; */
     transform: translateY(100px);
     color: var(--primary-black);
   }
   
-  /* Hero Section */
+
   .rehab-hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -42,7 +40,6 @@
     opacity: 0.9;
   }
   
-  /* Image Gallery */
   .image-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -62,7 +59,6 @@
     transform: scale(1.05);
   }
   
-  /* Section Styles */
   section {
     margin-bottom: 4rem;
   }
@@ -82,7 +78,6 @@
     font-size: 1.1rem;
   }
   
-  /* Services Grid */
   .services-grid, .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -128,15 +123,9 @@
     line-height: 1.6;
   }
   
-  /* Partners Section */
   .partners {
     text-align: center;
   }
-  /* .parnersImage
-  {
-    width:300px;
-    height: 700px;
-  } */
   
   .partners-grid {
     display: flex;
@@ -156,8 +145,6 @@
   .partners-grid img:hover {
     opacity: 1;
   }
-  
-  /* Responsive Design */
   @media (max-width: 768px) {
     .rehab-hero {
       padding: 2rem 1rem;
@@ -174,4 +161,295 @@
     .services-grid, .benefits-grid {
       grid-template-columns: 1fr;
     }
+  } */
+
+
+
+  /* Base Styles */
+
+.homepage {
+  background-color: #f2f1e2;
+}
+
+/* Hero Section */
+.hero-section_pwds {
+  position: relative;
+  background-image: url('/public/imgs/pwds.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 60vh; /* Full-screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  filter:brightness(1.2);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+  z-index: 1;
+}
+
+.hero-content_agri {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  margin-top: 6rem;
+}
+
+.hero-content_agri h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero-content_agri p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.hero-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color:  #EC4342;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #EC4330;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: #147169  ;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #147150;
+  color: black;
+}
+
+/* Statistics Section */
+.statistics-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.stat-item {
+  background-color:rgba(0, 0, 0, 0.5);; /* Semi-transparent white */
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  max-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+}
+
+.stat-item h2 {
+  font-size: 2rem;
+  color: #147169;
+}
+
+.stat-item p {
+  /* margin-top: 0.5rem; */
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-section_agri {
+    height: 80vh;
   }
+
+  .hero-content_agri h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content_agri p {
+    font-size: 1rem;
+  }
+
+  .statistics-section {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    max-width: 200px;
+    padding: 1rem;
+  }
+  .hero-section_pwds
+  {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section_agri {
+    height: 75vh;
+  }
+
+  .hero-content_agri h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content_agri p {
+    font-size: 0.9rem;
+  }
+
+  .stat-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item p {
+    font-size: 0.8rem;
+  }
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.rehabilitation-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.rehabilitation-hero {
+  text-align: center;
+  /* background: #3498db; */
+  color: white;
+  padding: 50px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.rehabilitation-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.rehabilitation-tagline {
+  font-size: 1.2rem;
+}
+
+/* Cards Section */
+.rehabilitation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.rehabilitation-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rehabilitation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.rehabilitation-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.rehabilitation-card__content {
+  padding: 20px;
+}
+
+.rehabilitation-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color:#147169;
+}
+
+.rehabilitation-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.rehabilitation-card li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Footer Section */
+.rehabilitation-footer {
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+
+
+.about_kvk_section_p{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about_kvk_image_p img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about_kvk_content_p {
+  flex: 1;
+}
+
+.about_kvk_content_p h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about_kvk_content_p p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

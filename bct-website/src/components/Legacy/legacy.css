@@ -163,12 +163,12 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   }
   .custom-icon {
-    color: orange;
+    color: #EC4342;
   }
   .styledpdfbutton
   {
     
-    color: orange; /* Text color */
+    color: #EC4342; /* Text color */
     border: none; /* Remove border */
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold text */

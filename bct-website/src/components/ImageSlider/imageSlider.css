@@ -20,12 +20,12 @@
   }
   
   .service-card {
-    border: 1px solid black;
+    border: px solid black;
     flex: 0 0 calc(33.333% - 14px);
-    background: white;
+    /* background: white; */
     border-radius: 16px;
     padding: 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 1px 0px  #147169;
     opacity: 0;
     transform: scale(0.95);
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -110,7 +110,7 @@
     border: none;
     color: white;
     font-weight: bold;
-    background-color: #4CAF50;
+    background-color:#147169;
   }
   .readmoreBtn:hover{
     cursor: pointer;
@@ -140,7 +140,7 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    color: #4CAF50;
+    color: #147169;
     transition: all 0.3s ease;
     z-index: 2;
   }
@@ -175,7 +175,7 @@
   }
   
   .dot.active {
-    background: #4CAF50;
+    background: #EC4342;
     transform: scale(1.2);
   }
   

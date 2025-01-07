@@ -120,7 +120,7 @@ const SupportPage = () => {
                   </Typography>
                 ))}
               </Box>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button variant="contained" style={{backgroundColor:"#147169"}} sx={buttonStyle}>
                 Donate in INR
               </Button>
             </Card>
@@ -128,7 +128,7 @@ const SupportPage = () => {
           <Grid item xs={12} md={6}>
             <Card sx={{ p: 3, mb: 3 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                <PublicIcon sx={{ fontSize: 40, mr: 2, color: '#4caf50' }} />
+                <PublicIcon sx={{ fontSize: 40, mr: 2, color: '#147169' }} />
                 <Typography variant="h6">
                   International Donations
                 </Typography>
@@ -141,7 +141,7 @@ const SupportPage = () => {
                   </Typography>
                 ))}
               </Box>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button variant="contained" style={{backgroundColor:"#147169"}} sx={buttonStyle}>
                 Donate Internationally
               </Button>
             </Card>
@@ -152,7 +152,7 @@ const SupportPage = () => {
       {/* Volunteer Section */}
       <Box sx={{ py: 6, textAlign: 'center' }}>
         <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
-          <PeopleIcon sx={{ fontSize: 60, color: '#ff9800' }} />
+          <PeopleIcon sx={{ fontSize: 60, color: '##147169' }} />
         </Box>
         <Typography variant="h4" gutterBottom>
           Become a Volunteer
@@ -165,7 +165,7 @@ const SupportPage = () => {
           size="large"
           sx={outlinedButtonStyle}
         >
-        <Link to='/volunteer'> Join as Volunteer</Link>
+        <Link to='/volunteer' className='joinvol'    style={{ textDecoration: 'none', color: 'black' }}> Join as Volunteer</Link>
         </Button>
       </Box>
     </Container>

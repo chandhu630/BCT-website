@@ -2,6 +2,7 @@
 .blog-page {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 70px;
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -11,7 +12,7 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  /* border: 2px solid gray; */
 }
 
 .blog-grid {
@@ -25,6 +26,7 @@
   border-radius: 10px;
   box-shadow: 0.5px 1px 0px 0px rgb(173, 170, 170);
   padding: 15px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -43,7 +45,7 @@
 .blog-titlepage {
   font-size: 1.5rem;
   margin: 15px 0 10px;
-  color: #888;
+  color: #636d6d  ;
 }
 
 .blog-date {
@@ -74,5 +76,5 @@
 }
 
 .read-more-btn:hover {
-  background-color: rgb(122, 34, 34);
+  background-color: #EC4342;
 }

@@ -6,6 +6,14 @@ export const EducationIcon = () => (
   </svg>
 );
 
+export const Health = () => (
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21s-6-4.5-6-10 2.686-6 6-6 6 2.686 6 6-6 10-6 10z" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M10 11h4m-2-2v4" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+);
+
+
 export const SkillsIcon = () => (
   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>

@@ -1,27 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    max-width: 100vw;
+
+  .container_home {
+    /* max-width: 100vw; */
+    width: 100vw;
     height: 750px;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to right, rgb(221,246,232),rgb(224,246,237),rgb(222,243,238),rgb(223,242,242),rgb(224,242,244));
     color: #333;
     margin: 0 auto;
     transform: translateY(60px);
-    border-bottom: 1px solid rgb(222,243,238);
     border-bottom-width: 10px;
+    
   }
-  .displayDiv{
+  
+  .displayDiv {
+    position: relative;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    margin: 0;
-    padding: 100px;
-    /* border: 2px solid red; */
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+    animation: backgroundSlider 12s infinite;
+  }
+
+  @keyframes backgroundSlider {
+    0% {
+      background-image: url('/public/imgs/tribalShool.png');
+    }
+   
+    66% {
+      background-image: url('/public/imgs/pwds.png');
+    }
+    100% {
+      background-image: url('/public/imgs/boys.png');
+    }
+    33% {
+      background-image: url('/public/imgs/agri/testing.jpeg');
+    }
+    100% {
+      background-image: url('/public/imgs/agri/Classroom.JPG');
+    }
+  }
+  
+  
+  .displayDiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(18, 17, 17, 0.5);  */
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2; /* Place content above the overlay */
+    font-size: 1.5rem; /* Adjust font size as needed */
   }
   
   .text-container {
@@ -30,18 +68,18 @@
     padding: 25px;
   }
   
-  .heading {
+  .heading_home {
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 60px;
-    color: black;
+    color: #147169;
   }
   
   .subheading {
     font-size: 3.6rem;
     font-weight: bold;
     /* color: #28a745; */
-    color: #15926A;
+    color:white;
     margin: 10px 0;
   }
   
@@ -49,16 +87,17 @@
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 28px;
     font-size: 1.2rem;
-    color: #525D6A;
     word-spacing: 3px;
     font-weight: 400;
+    filter: brightness(1.5);
+    
   }
   
-  .buttons {
+  .buttonHome {
     margin-top: 20px;
   }
   
-  .button {
+  .buttonHome {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
@@ -66,30 +105,35 @@
     text-decoration: none;
     border-radius: 5px;
     margin: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .button-primary {
+  .button-primaryhome {
     /* background-color: #DA545A; */
     background-color: #15926A;
-    color: #fff;
+    margin-top: 20px;
+    color:white;
     border: none;
     padding: 20px 30px;
     border-radius: 50px;
+    text-decoration: none;
   }
   
   .button-primary:hover {
     background-color: #15926A;
   }
   
-  .button-secondary {
-    background-color: #fff;
+  .button-secondaryhome {
     /* color: black; */
-    color: #15926A;
+    color: white;
+    margin-top: 20px;
     /* border: 2px solid #15926A; */
-    border: 2px solid #15926A;
+    border: 2px solid #EC4342;
+    text-decoration: none;
     padding: 18px 25px;
     border-radius: 50px;
+    cursor: pointer;
   }
   
   .button-secondary:hover {
@@ -109,10 +153,11 @@
   
   .card {
     flex: 1 1 45%;
-    background-color: #fff;
+    background-color:rgba(59, 52, 52, 0.5);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    color: #e9f5ee;
     /* text-align: center; */
     height: 120px;
     /* border: 1px solid green; */
@@ -128,7 +173,7 @@
   
   .card p {
     font-size: 1.2rem;
-    color: #666;
+    color: white;
     font-weight: 350;
   }
     
@@ -198,6 +243,7 @@
     font-weight: 700;
     color: rgb(17, 24, 39);
     line-height: 40px;
+    padding-top: 30px;
   }
   
   @media (max-width: 1024px) {
@@ -308,9 +354,6 @@
       margin: 0 auto;
     }
   
-    /* .ProgramsPage, .sliderPart {
-      padding: 20px 10px;
-    } */
   
     .subheading1 {
       font-size: 1.5rem;
@@ -326,3 +369,36 @@
 
 
   
+/* For smaller screens */
+@media (max-width: 480px) {
+  .container_home {
+    width: 100%;  /* Ensure it fills the screen on mobile */
+    height: auto;  /* Let the height adjust to the content */
+  }
+
+  .heading_home {
+    font-size: calc(1.5rem + 2vw);  /* Make font responsive */
+    margin-top: 50px;
+  }
+
+  .subheading1 {
+    font-size: 2rem;  /* Adjusting for mobile */
+  }
+
+  .card-container {
+   display: none;
+  }
+
+  .card {
+    width: 100%;  /* Ensure cards take full width on mobile */
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+

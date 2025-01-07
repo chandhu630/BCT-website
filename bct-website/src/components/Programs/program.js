@@ -4,7 +4,8 @@ import {
   SkillsIcon, 
   RehabilitationIcon, 
   AgricultureIcon, 
-  CommunityIcon 
+  CommunityIcon ,
+  Health,
 } from '../Remaning/icons';
 import './program.css';
 
@@ -39,6 +40,12 @@ const Program = () => {
       title: "Community Organization",
       description: "Building stronger communities through collective action.",
       borderColor: "#FF8C00"
+    },
+    {
+      icon: <Health />,
+      title: "Health Care",
+      description: "Health camps, awareness support and community well-being.",
+      borderColor: "	#2d73db"
     }
   ];
 
