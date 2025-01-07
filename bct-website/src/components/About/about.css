@@ -4,7 +4,6 @@
   margin: 20px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  border: px solid red;
   box-sizing: border-box;
 }
 
@@ -130,7 +129,6 @@ p {
 .flexButtons
 {
   display: flex;
-  border: px solid black;
   gap: 20px;
 }
 .linknone

@@ -39,7 +39,7 @@ const Agriculture = () => {
     const animateCounters = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const counters = document.querySelectorAll(".stat-item h2");
+          const counters = document.querySelectorAll(".item_BctAgri h2");
           counters.forEach((counter) => {
             const target = +counter.getAttribute("data-target");
             const speed = 50;

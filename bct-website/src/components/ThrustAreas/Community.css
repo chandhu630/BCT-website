@@ -235,7 +235,10 @@
   .hero {
     padding: 40px 20px;
   }
-
+.statistics-section
+{
+  display: none;
+}
   .programs-grid {
     grid-template-columns: 1fr;
   }

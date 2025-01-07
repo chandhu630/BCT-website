@@ -153,7 +153,7 @@
   
   .card {
     flex: 1 1 45%;
-    background-color:rgba(59, 52, 52, 0.5);
+    background-color:rgba(26, 19, 19, 0.5);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -268,7 +268,6 @@
     .buttons {
       margin-top: 15px;
     }
-  
     .card-container {
       width: 100%;
       padding: 30px;
@@ -295,6 +294,10 @@
       width: 100%;
       gap: 15px; 
       margin: auto;
+    }
+    .description
+    {
+      display: none;
     }
   
     .card {
@@ -390,7 +393,7 @@
   }
 
   .card {
-    width: 100%;  /* Ensure cards take full width on mobile */
+    width: 100%;  
     padding: 15px;
   }
 }
