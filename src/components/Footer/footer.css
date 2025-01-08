@@ -10,7 +10,9 @@
     margin-top: auto; /* Pushes the footer to the bottom */
 
 }
-
+.footer-description{
+    color: white;
+}
 /* Content inside footer fixed to 1200px width */
 .footer_container {
     display: flex;
@@ -37,9 +39,14 @@
 .footer-section {
     flex: 1 1 300px;
     box-sizing: border-box;
-    margin-bottom: 20px; /* Adds space between sections on smaller screens */
+    margin-bottom: 20px; 
 }
-
+.footer-section p{
+    color: white;
+}
+.footer-bottom-left p{
+    color: white;
+}
 /* Footer Title */
 .footer-title {
     font-size: 1.2rem;
@@ -176,7 +183,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .footer {
         padding: 30px 15px; /* Adjust padding for medium-sized screens */
     }

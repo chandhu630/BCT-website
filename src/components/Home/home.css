@@ -243,7 +243,9 @@
     line-height: 40px;
     padding-top: 30px;
   }
-  
+  .footerPageHome{
+    margin-top: 200px;
+  }
   @media (max-width: 1024px) {
     .container {
       height: auto;
@@ -273,7 +275,7 @@
     }
     .buttons {
       margin-top: 15px;
-      margin-top: 50px;
+      margin-top: 180px;
       /* border: 1px solid red; */
     }
   
@@ -324,7 +326,7 @@
     .card {
       flex: 1 1 100%;
       max-width: 300px;
-      margin: 0 auto; /* Center cards */
+      margin: 0 auto; 
     }
     .ProgramsPage{
       margin: 50px;
@@ -333,23 +335,42 @@
   }
   
   @media (max-width: 480px) {
-    .container {
-      padding: 20px 10px;
+    .container_home {
+      width: 100%;  
+      height: auto; 
     }
-  
-    .heading {
-      font-size: 2rem;
-      line-height: 1.8rem;
+    .text-container{
+      transform: translateY(-180px);
     }
-  
-    .subheading {
-      font-size: 2rem;
-    }
-  
+    .heading_home {
+      /* font-size: calc(1.5rem + 2vw);  */
+      font-size: 1.5rem;
+      /* margin-top: 50px; */
+      /* border: 1px solid red; */
+    } 
     .description {
-      font-size: 0.85rem;
+      font-size: 18px !important;
       line-height: 1.2rem;
       padding: 0 10px;
+    } 
+    .card-container {
+      /* gap: 10px; */
+      width: 100%;
+      transform: translateY(-180px);
+    }
+    .card {
+      width: 90%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    #programs-part{
+      margin-top: 700px;
+    }
+    .subheading1 {
+      font-size: 2rem;  
+    }
+    .subheading {
+      font-size: 2rem;
     }
   
     .buttons {
@@ -360,69 +381,19 @@
       align-items: center;
       margin: auto;
     }
-    
-  
     .button {
       font-size: 15px;
       width: 60%;
       text-align: center; 
     }
-  
-    .card-container {
-      gap: 10px;
-      width: 100%;
+    .displayDiv{
+      display: grid;
+      
     }
-  
-    .card {
-      width: 90%;
-      margin: 0 auto;
+    .footerPage{
+      margin-top: 150px;
     }
-  
-  
-    .subheading1 {
-      font-size: 1.5rem;
+    .footerPageHome{
+      margin-top: 200px;
     }
   }
-  .footerPage{
-    margin-top: 150px;
-  }
-.footerPageHome
-{
-  margin-top: 200px;
-}
-
-
-  
-/* For smaller screens */
-@media (max-width: 480px) {
-  .container_home {
-    width: 100%;  /* Ensure it fills the screen on mobile */
-    height: auto;  /* Let the height adjust to the content */
-  }
-
-  .heading_home {
-    font-size: calc(1.5rem + 2vw);  /* Make font responsive */
-    margin-top: 50px;
-  }
-
-  .subheading1 {
-    font-size: 2rem;  /* Adjusting for mobile */
-  }
-
-  .card-container {
-   display: none;
-  }
-
-  .card {
-    width: 100%;  /* Ensure cards take full width on mobile */
-    padding: 15px;
-  }
-}
-
-
-
-
-
-
-
-

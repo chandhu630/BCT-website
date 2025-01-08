@@ -1,178 +1,358 @@
-.tribal-education {
-    width: 100%;
+  /* .tri-container {
+    max-width: 1200px;
     margin: 0 auto;
-    transform: translateY(100px);
+    padding: 20px;
   }
-  .hero-section {
+  
+  .tri-hero {
+    position: relative;
+    height: 500px;
+    margin-bottom: 60px;
+  }
+  
+  .tri-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .tri-hero-content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .tri-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .tri-overview {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 40px;
     align-items: center;
-    margin-bottom: 4rem;
-    padding: 2rem;
-    /* background: linear-gradient(145deg, #f6f8fd 0%, #ffffff 100%); */
-    /* border-radius: 20px; */
-    border: px solid red;
+    margin-bottom: 60px;
   }
   
-  .hero-content h1 {
-    font-size: 2.5rem;
-    color: #15926A;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .title-icon {
-    color: white;
-    font-size: 2.8rem;
-  }
-  
-  .hero-content p {
-    font-size: 1.1rem;
-    color: white;
-    line-height: 1.6;
-  }
-  
-  .hero-image img {
+  .tri-overview-image {
     width: 100%;
-    height: auto;
+    height: 350px;
+    border: 1px solid red;
     border-radius: 10px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  .stats-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 100px;
-    margin-bottom: 4rem;
+  .tri-target {
+    margin-bottom: 60px;
   }
   
-  .stat-card {
-    background: rgba(255, 255, 255, 0.939);
-    padding: 2rem;
+  .tri-stats-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-    border: 0.5px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
   }
   
-  .stat-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .stat-card h3 {
+  .tri-icon {
     font-size: 2.5rem;
-    color: #4c1d95;
-    margin-bottom: 0.5rem;
+    color: #2c5282;
+    margin-bottom: 20px;
   }
   
-  .stat-card p {
-    color: #4a5568;
-    font-size: 1.1rem;
-  }
-  .features-section {
-    margin-bottom: 4rem;
+  .tri-process {
+    margin-bottom: 60px;
   }
   
-  .features-section h2 {
+  .tri-process h2 {
     text-align: center;
-    font-size: 2rem;
-    color: #2d3748;
-    margin-bottom: 3rem;
+    margin-bottom: 40px;
   }
   
-  .features-grid {
+  .tri-process-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    gap: 30px;
   }
   
-  .feature-card {
+  .tri-process-card {
     background: white;
-    padding: 2rem;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.3s ease;
   }
   
-  .feature-card:hover {
+  .tri-process-card:hover {
     transform: translateY(-5px);
   }
   
-  .feature-icon {
-    width: 50px;
-    height: 50px;
-    background: #f3e8ff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+  .tri-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
   }
-  
-  .feature-icon svg {
-    font-size: 1.5rem;
-    color: #4c1d95;
-  }
-  
-  .feature-card h3 {
-    font-size: 1.25rem;
-    color: #2d3748;
-    margin-bottom: 1rem;
-  }
-  
-  .feature-card p {
-    color: #4a5568;
-    line-height: 1.6;
-  }
-  .partners-section {
-    text-align: center;
-    margin-bottom: 100px;
-  }
-  
-  .partners-section h2 {
-    font-size: 2rem;
-    color: #2d3748;
-    margin-bottom: 2rem;
-  }
-  
-  .partners-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
-  
-  .partners-grid img {
-    height: 60px;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-  }
-  
-  .partners-grid img:hover {
-    opacity: 1;
-  }
-  
   @media (max-width: 768px) {
-    .hero-section {
-      grid-template-columns: 1fr;
-      gap: 2rem;
+    .tri-hero {
+      height: 300px;
     }
   
-    .stats-section {
-      grid-template-columns: 1fr;
+    .tri-hero-content {
+      left: 20px;
+      bottom: 20px;
     }
   
-    .hero-content h1 {
+    .tri-hero-content h1 {
       font-size: 2rem;
     }
   
-    .partners-grid {
-      gap: 2rem;
+    .tri-overview {
+      grid-template-columns: 1fr;
+    }
+  
+    .tri-process-grid {
+      grid-template-columns: 1fr;
     }
   }
+@media (max-width: 1024px) {
+  .tri-container {
+    max-width: 960px;
+    padding: 15px;
+  }
+
+  .tri-hero {
+    height: 400px;
+  }
+
+  .tri-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .tri-overview {
+    gap: 30px;
+  }
+
+  .tri-process-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+
+  .tri-process-card {
+    padding: 20px;
+  }
+
+  .tri-stats-card {
+    padding: 25px;
+  }
+
+  .tri-icon {
+    font-size: 2rem;
+  }
+
+  .tri-card-image {
+    height: 130px;
+  }
+} */
+
+
+.tri-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section - Full Width */
+.tri-hero {
+  position: relative;
+  height: 500px;
+  margin: -20px -20px 60px -20px; /* Negative margin to counter container padding */
+  width: 100vw; /* Full viewport width */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.tri-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tri-hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tri-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.tri-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.tri-overview-image {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tri-target {
+  margin-bottom: 60px;
+}
+
+.tri-stats-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.tri-icon {
+  font-size: 2.5rem;
+  color: #2c5282;
+  margin-bottom: 20px;
+}
+
+.tri-process {
+  margin-bottom: 60px;
+}
+
+.tri-process h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tri-process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.tri-process-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 350px;
+}
+
+.tri-process-card:hover {
+  transform: translateY(-5px);
+}
+
+.tri-card-image {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Media Query for 1024px */
+@media (max-width: 1024px) {
+  .tri-container {
+    max-width: 960px;
+    padding: 15px;
+  }
+
+  .tri-hero {
+    height: 400px;
+    margin: -15px -15px 60px -15px;
+  }
+
+  .tri-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .tri-overview {
+    gap: 30px;
+  }
+
+  .tri-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .tri-process-card {
+    padding: 20px;
+    width: 350px;
+  }
+
+  .tri-stats-card {
+    padding: 25px;
+  }
+
+  .tri-icon {
+    font-size: 2rem;
+  }
+
+  /* Image dimensions remain constant */
+  .tri-card-image,
+  .tri-overview-image {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+  .tri-container {
+    padding: 10px;
+  }
+
+  .tri-hero {
+    height: 300px;
+    margin: -10px -10px 40px -10px;
+  }
+
+  .tri-hero-content {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .tri-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .tri-overview {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tri-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tri-process-card,
+  .tri-card-image,
+  .tri-overview-image {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+  }
+
+  .tri-overview {
+    justify-items: center;
+  }
+}

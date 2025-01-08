@@ -104,3 +104,14 @@
       font-size: 0.9rem; /* Slightly smaller description text for mobile */
     }
   }
+  @media (max-width: 480px) {
+    .features-grids {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-cards {
+      width: 280px; 
+      padding: 1rem;
+      /* border: 1px solid red !important; */
+    }
+  }

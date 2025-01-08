@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info Section */}
-        <div className="footer-section " style={{color:""}}>
+        <div className="footer-section" style={{color:""}}>
           <h4 className="footer-title">Contact Info</h4>
           <p>
             <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> Bhagavatula Charitable Trust Eco Rejuvenation Centre Haripuram – 531061 Visakhapatnam district

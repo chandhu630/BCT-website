@@ -7,11 +7,11 @@ const BankDetailsPage = () => {
     <div className="bank-details-container">
       {/* Hero Section */}
       <div className="donation-hero">
-        <div className="hero-overlay">
-          <img src="/images/boat.png" alt="BCT Logo" className="bct-logo" />
+        {/* <div className="hero-overlay"> */}
+          {/* <img src="/images/boat.png" alt="BCT Logo" className="bct-logo" /> */}
           <h1>Make a Donation</h1>
           <p>Supporting positive change in communities</p>
-        </div>
+        {/* </div> */}
       </div>
 
       {/* Thank You Message */}
@@ -28,7 +28,7 @@ const BankDetailsPage = () => {
       <div className="bank-details-section">
         <div className="bank-card">
           <div className="card-header">
-            <img src="/images/boat.png" alt="SBI Logo" className="bank-logo" />
+            <img src="/imgs/bct.png" alt="SBI Logo" className="bank-logo" />
             <h3>Bank Transfer Details</h3>
           </div>
           

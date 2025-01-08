@@ -1,104 +1,175 @@
 import React from 'react';
 import './TribalEd.css';
-import { 
-  FaGraduationCap, 
-  FaUsers, 
-  FaChalkboardTeacher, 
-  FaBook, 
-  FaStar, 
-  FaMobileAlt 
-} from 'react-icons/fa';
 
-const TribalEd = () => {
-  const features = [
+function TribalEd() {
+  const academicData = [
     {
-      icon: <FaChalkboardTeacher />,
-      title: "Mentorship Model",
-      description: "11 mentors and 1 project coordinator implement the project with initial training at BCT campus"
+      icon: "📘",
+      title: "State-Approved Curriculum",
+      description:
+        "Following government regulations and state syllabus while maintaining high academic standards.",
     },
     {
-      icon: <FaBook />,
+      icon: "💡",
+      title: "Progressive Methods",
+      description:
+        "Implementation of multimedia and modern teaching techniques for enhanced learning experience.",
+    },
+    {
+      icon: "🏢",
+      title: "Subject-Specific Centers",
+      description:
+        "Dedicated learning centers with comprehensive reference materials for each subject.",
+    },
+    {
+      icon: "💻",
+      title: "Computer Skills",
+      description:
+        "Comprehensive computer education including MS Office, HTML, and hardware basics.",
+    },
+    {
+      icon: "📊",
+      title: "Regular Evaluation",
+      description:
+        "Continuous assessment and focused attention on students needing additional support.",
+    },
+    {
+      icon: "📚",
       title: "Learning Resources",
-      description: "Telugu books, posters, and manuals provided to schools for enhanced learning"
+      description:
+        "Easy access to study materials and resources at each learning center.",
+    },
+  ];
+
+  const coreSkills = [
+    {
+      icon: "🧵",
+      title: "Charkha Spinning",
+      description:
+        "Mandatory skill training in traditional spinning wheel operation, promoting self-reliance and cultural heritage.",
     },
     {
-      icon: <FaStar />,
-      title: "Star System",
-      description: "Different colored stars awarded to schools based on student accomplishments"
+      icon: "🌾",
+      title: "Agriculture/Horticulture",
+      description:
+        "Essential training in farming techniques and plant cultivation.",
+    },
+  ];
+
+  const optionalSkills = [
+    {
+      icon: "✂️",
+      title: "Tailoring",
+      description:
+        "Learn professional garment making and clothing repair skills.",
     },
     {
-      icon: <FaUsers />,
-      title: "Peer Learning",
-      description: "Formation of clubs and selection of peer leaders for collaborative learning"
+      icon: "➕",
+      title: "Embroidery",
+      description:
+        "Master the art of decorative needlework and textile embellishment.",
     },
     {
-      icon: <FaMobileAlt />,
-      title: "Digital Monitoring",
-      description: "App-based monitoring system for data collection and analysis"
-    }
+      icon: "⚡",
+      title: "Electrical Skills",
+      description:
+        "Basic electrical maintenance and repair training for practical applications.",
+    },
   ];
 
   return (
-    <div className="tribal-education">
-      {/* Hero Section */}
-      <div className="hero-section">
-        <div className="hero-content">
-          <h1>
-            <FaGraduationCap className="title-icon" />
-            Tribal Primary Education
-          </h1>
+    <div style={{marginTop:"60px"}}  className="Rhapp">
+      <header className="rhpage-header">
+        <h1>BCT Residential Model High School</h1>
+        <p>Empowering Rural India through Value-based Education since 1995</p>
+        <div className="page-header-buttons">
+          <button className="button">Learn More</button>
+          <button className="button button-outline">Contact Us</button>
+        </div>
+      </header>
+
+      <main className="main-content">
+        <section className="introduction-section">
+          <h2>Empowering Rural Education Since 1995</h2>
           <p>
-            Enhancing learning levels of primary level students in tribal regions through
-            our Comprehensive Education Initiative, in collaboration with prestigious partners.
+            Rural India needs an education system that specifically answers its needs and fills its shortcomings.<br />
+            Established in 1995, the BCT Residential Model High School answers those needs through its<br />
+            government-recognized value-based, skill-oriented rurally-biased approach.<br />
           </p>
-        </div>
-        <div className="hero-image">
-          <img src="/imgs/boys.png" alt="Tribal Education" />
-        </div>
-      </div>
+        </section>
 
-      {/* Stats Section */}
-      <div className="stats-section">
-        <div className="stat-card">
-          <h3>1958</h3>
-          <p>Schools</p>
-        </div>
-        <div className="stat-card">
-          <h3>77</h3>
-          <p>Clusters</p>
-        </div>
-        <div className="stat-card">
-          <h3>11</h3>
-          <p>Mandals</p>
-        </div>
-      </div>
+        <section className="features-sectionRhs">
+          <div className="feature-cardRhs academic-featureRhs">
+            <div className="iconRhs">📘</div>
+            <h3>Academics</h3>
+            <p>State-approved curriculum with progressive teaching methods and multimedia learning.</p>
+          </div>
 
-      {/* Features Grid */}
-      <div className="features-section">
-        <h2>How It Works</h2>
-        <div className="features-grid">
-          {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="feature-icon">{feature.icon}</div>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+          <div className="feature-card educational-featureRhs">
+            <div className="iconRhs">📋</div>
+            <h3>Skill Education</h3>
+            <p>Comprehensive vocational training including agriculture, crafts, and technical skills.</p>
+          </div>
 
-      {/* Partners Section */}
-      <div className="partners-section">
-        <h2>Our Partners</h2>
-        <div className="partners-grid">
-          <img src="/imgs/RHS.png" alt="Sikshana Foundation" />
-          <img src="/imgs/tribalShool.png" alt="Government of AP" />
-          <img src="/imgs/boys.png" alt="Vibha Inc" />
-        </div>
-      </div>
-    
+          <div className="feature-card social-featureRhs">
+            <div className="iconRhs">👥</div>
+            <h3>Social Animation</h3>
+            <p>Community engagement through cultural activities and social awareness programs.</p>
+          </div>
+
+          <div className="feature-card infrastructure-featureRhs">
+            <div className="iconRhs">🏢</div>
+            <h3>Infrastructure</h3>
+            <p>Fully equipped centers for learning and hands-on training, built to support student growth.</p>
+          </div>
+        </section>
+
+        <section className="Rhsacademic-excellence-section">
+          <h2>Academic Excellence</h2>
+          <p>
+            We believe in providing the best possible education to all our students. The BCT Residential Model High School
+            focuses on comprehensive learning that meets the educational needs of rural areas.
+          </p>
+
+          <div className="card-containersRhs">
+            {academicData.map((item, index) => (
+              <div className="info-cardRhs" key={index}>
+                <div className="iconRhs">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="skills-training-section">
+          <h2>Core Skills</h2>
+          <div className="skills-container">
+            {coreSkills.map((item, index) => (
+              <div className="skill-card" key={index}>
+                <div className="icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2>Optional Skills</h2>
+          <div className="skills-container">
+            {optionalSkills.map((item, index) => (
+              <div className="skill-card" key={index}>
+                <div className="icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* <button className="ETcta-button">Contact Us Now</button> */}
+      </main>
     </div>
   );
-};
+}
 
 export default TribalEd;
