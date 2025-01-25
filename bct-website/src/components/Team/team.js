@@ -28,7 +28,7 @@ const teamMembers = [
     role: 'Treasurer',
     description:
       'A former banker with over three decades of experience in banking and finance, she has served as a CSR Consulting Advisor for various organizations.',
-    image: './imgs/mohan.png',
+    image: './imgs/jyothi.png',
   },
   {
     name: 'Sri N Somayajulu',

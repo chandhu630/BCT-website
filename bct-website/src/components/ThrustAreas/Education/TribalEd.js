@@ -1,104 +1,120 @@
 import React from 'react';
-import './TribalEd.css';
-import { 
-  FaGraduationCap, 
-  FaUsers, 
-  FaChalkboardTeacher, 
-  FaBook, 
-  FaStar, 
-  FaMobileAlt 
-} from 'react-icons/fa';
+import './RhSchools.css';
 
-const TribalEd = () => {
-  const features = [
+function RhSchools() {
+  const academicData = [
     {
-      icon: <FaChalkboardTeacher />,
-      title: "Mentorship Model",
-      description: "11 mentors and 1 project coordinator implement the project with initial training at BCT campus"
+      icon: "📘",
+      title: "State-Approved Curriculum",
+      description:
+        "Following government regulations and state syllabus while maintaining high academic standards.",
     },
     {
-      icon: <FaBook />,
+      icon: "💡",
+      title: "Progressive Methods",
+      description:
+        "Implementation of multimedia and modern teaching techniques for enhanced learning experience.",
+    },
+    {
+      icon: "🏢",
+      title: "Subject-Specific Centers",
+      description:
+        "Dedicated learning centers with comprehensive reference materials for each subject.",
+    },
+    {
+      icon: "💻",
+      title: "Computer Skills",
+      description:
+        "Comprehensive computer education including MS Office, HTML, and hardware basics.",
+    },
+    {
+      icon: "📊",
+      title: "Regular Evaluation",
+      description:
+        "Continuous assessment and focused attention on students needing additional support.",
+    },
+    {
+      icon: "📚",
       title: "Learning Resources",
-      description: "Telugu books, posters, and manuals provided to schools for enhanced learning"
+      description:
+        "Easy access to study materials and resources at each learning center.",
     },
-    {
-      icon: <FaStar />,
-      title: "Star System",
-      description: "Different colored stars awarded to schools based on student accomplishments"
-    },
-    {
-      icon: <FaUsers />,
-      title: "Peer Learning",
-      description: "Formation of clubs and selection of peer leaders for collaborative learning"
-    },
-    {
-      icon: <FaMobileAlt />,
-      title: "Digital Monitoring",
-      description: "App-based monitoring system for data collection and analysis"
-    }
   ];
 
   return (
-    <div className="tribal-education">
-      {/* Hero Section */}
-      <div className="hero-section">
-        <div className="hero-content">
-          <h1>
-            <FaGraduationCap className="title-icon" />
-            Tribal Primary Education
-          </h1>
+    <div style={{ marginTop: "60px" }} className="Rhapp">
+      <header className="rhpage-header">
+        <h1>Tribal Primary Education</h1>
+        <p>
+          Enhancing learning levels of primary level students in tribal regions, BCT collaborates with Sikshana Foundation,
+          Bengaluru, Government of Andhra Pradesh, and Vibha Inc to bring the ‘Comprehensive Education Initiative’.
+          Operational since 2019, the project has seen enhanced levels of learning, leadership, and participation among
+          all the students.
+        </p>
+        <div className="page-header-buttons">
+          <button className="button">Learn More</button>
+          <button className="button button-outline">Contact Us</button>
+        </div>
+      </header>
+
+      <main className="main-content">
+        <section className="introduction-section">
+          <h2>Target Segment</h2>
           <p>
-            Enhancing learning levels of primary level students in tribal regions through
-            our Comprehensive Education Initiative, in collaboration with prestigious partners.
+            The project works with students in primary, upper primary, and high school levels. It operates in 11 mandals,
+            targeting a total of 1,958 schools across 77 clusters.
           </p>
-        </div>
-        <div className="hero-image">
-          <img src="/imgs/boys.png" alt="Tribal Education" />
-        </div>
-      </div>
+        </section>
 
-      {/* Stats Section */}
-      <div className="stats-section">
-        <div className="stat-card">
-          <h3>1958</h3>
-          <p>Schools</p>
-        </div>
-        <div className="stat-card">
-          <h3>77</h3>
-          <p>Clusters</p>
-        </div>
-        <div className="stat-card">
-          <h3>11</h3>
-          <p>Mandals</p>
-        </div>
-      </div>
+        <section className="features-sectionRhs">
+          <div className="feature-cardRhs academic-featureRhs">
+            <div className="iconRhs">📘</div>
+            <h3>How It Works?</h3>
+            <p>
+            The initiative employs 11 mentors and 1 coordinator to implement and monitor progress, with training provided at the BCT campus. Resources in Telugu, achievement stars, regular visits, and app-based monitoring ensure effective mentorship and learning.            </p>
+            
+          </div>
 
-      {/* Features Grid */}
-      <div className="features-section">
-        <h2>How It Works</h2>
-        <div className="features-grid">
-          {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="feature-icon">{feature.icon}</div>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+          <div className="feature-card educational-featureRhs">
+            <div className="iconRhs">📚</div>
+            <h3>Learning Resources</h3>
+            <p>
+              Schools receive books, posters, and manuals in Telugu to enhance the learning process. Peer leaders
+              are chosen to encourage collaborative and peer-to-peer learning approaches.
+            </p>
+          </div>
 
-      {/* Partners Section */}
-      <div className="partners-section">
-        <h2>Our Partners</h2>
-        <div className="partners-grid">
-          <img src="/imgs/RHS.png" alt="Sikshana Foundation" />
-          <img src="/imgs/tribalShool.png" alt="Government of AP" />
-          <img src="/imgs/boys.png" alt="Vibha Inc" />
-        </div>
-      </div>
-    
+          <div className="feature-card infrastructure-featureRhs">
+            <div className="iconRhs">📊</div>
+            <h3>Monitoring & Evaluation</h3>
+            <p>
+              Regular school visits are conducted by mentors, and an app-based monitoring and reporting system is
+              employed to collect and analyze data effectively.
+            </p>
+          </div>
+        </section>
+
+        <section className="Rhsacademic-excellence-section">
+          <h2>Academic Excellence</h2>
+          <p>
+            We believe in providing the best possible education to all our students. The BCT Tribal Primary Education
+            Initiative focuses on comprehensive learning that addresses the unique educational needs of rural and tribal
+            areas.
+          </p>
+
+          <div className="card-containersRhs">
+            {academicData.map((item, index) => (
+              <div className="info-cardRhs" key={index}>
+                <div className="iconRhs">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
-};
+}
 
-export default TribalEd;
+export default RhSchools;

@@ -78,8 +78,8 @@ function RhSchools() {
   ];
 
   return (
-    <div style={{marginTop:"30px"}}  className="app">
-      <header className="page-header">
+    <div style={{marginTop:"60px"}}  className="Rhapp">
+      <header className="rhpage-header">
         <h1>BCT Residential Model High School</h1>
         <p>Empowering Rural India through Value-based Education since 1995</p>
         <div className="page-header-buttons">
@@ -166,7 +166,7 @@ function RhSchools() {
           </div>
         </section>
 
-        <button className="cta-button">Contact Us Now</button>
+        {/* <button className="ETcta-button">Contact Us Now</button> */}
       </main>
     </div>
   );

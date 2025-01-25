@@ -30,7 +30,7 @@ const LegacyPage = () => {
         </div>
 
         {/* Text Section */}
-        <div className="text-container">
+        <div className="textcontainer">
           <p>
             <strong style={{ color: "#EC4342" }}>Dr. BV Parameswara Rao </strong>
             spent his growing years in the village of Dimili and Visakhapatnam.

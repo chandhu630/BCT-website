@@ -16,13 +16,13 @@ const Footer = () => {
           Making a difference in communities through sustainable development and empowerment initiatives.
           </p>
           <div className="footer-social-icons">
-            <a href="#" className="social-icons">
+            <a href="https://x.com/bct_ngo" className="social-icons">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#" className="social-icons">
+            <a href="https://www.instagram.com/bct_india/?hl=en" className="social-icons">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="social-icons">
+            <a href="https://www.linkedin.com/company/bctindia/posts/?feedView=all" className="social-icons">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
@@ -47,13 +47,13 @@ const Footer = () => {
         <div className="footer-section " style={{color:""}}>
           <h4 className="footer-title">Contact Info</h4>
           <p>
-            <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> Bhagavatula Charitable Trust Eco Rejuvenation Centre Haripuram – 531061 Visakhapatnam district
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> <a className='ContactDetailsColor'  href='https://www.google.com/maps/search/Bhagavatula+Charitable+Trust+Eco+Rejuvenation+Centre+Haripuram+%E2%80%93+531061+Visakhapatnam+district/@17.5449059,82.9424231,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D'> Bhagavatula Charitable Trust Eco Rejuvenation Centre Haripuram – 531061 Visakhapatnam district</a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faEnvelope} className="icon" /> info@bctindia.org
+            <FontAwesomeIcon icon={faEnvelope} className="icon" /> <a className='ContactDetailsColor' href='mailTo:info@bctindia.org'>info@bctindia.org</a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faPhone} className="icon" /> +91 8500359819
+            <FontAwesomeIcon icon={faPhone} className="icon" /> <a className='ContactDetailsColor' href='Tel:+91 8500359819'> +91 8500359819</a>
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-bottom-left">
-          <p>© 2024 NGOName. All rights reserved.</p>
+          <p>© 2024 Bhagavatula Charitable Trust. All rights reserved.</p>
         </div>
         <div className="footer-bottom-right">
           <ul className="footer-bottom-links">

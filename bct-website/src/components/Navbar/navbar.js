@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-brand">
         <Link to="/" className="nav-logo">
-          <img src="./imgs/bct.png" alt="BCT Logo" style={{ height: "80px" }} />
+          <img src="./imgs/bct.png" alt="BCT Logo" style={{ height: "80px" ,backgroundColor:"#F2F1E2", borderTopLeftRadius:"50px"}} />
         </Link>
       </div>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
               setShowAboutDropdown(!showAboutDropdown);
             }}
           >
-            <Link to="/about" className="about" onClick={handleNavLinkClick}>
+            <Link to="/about" className="about" id="AboutNav" style={{color:"black"}} onClick={handleNavLinkClick}>
               About
             </Link>
             <i className="fas fa-chevron-down" style={{ fontSize: "8px" }}></i>

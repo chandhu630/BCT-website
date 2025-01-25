@@ -9,6 +9,23 @@
     overflow: hidden; /* Prevents overflow of content */
     margin-top: auto; /* Pushes the footer to the bottom */
 
+
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10; */
+
+
+}
+
+.ContactDetailsColor
+{
+    text-decoration: none;
+    color: #666;
 }
 
 /* Content inside footer fixed to 1200px width */

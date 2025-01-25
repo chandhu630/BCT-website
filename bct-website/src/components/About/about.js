@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const AboutUsSection = () => {
   return (
-    <div style={{marginBottom:"30px"}} className="about-us-section">
+    <div style={{marginBottom:"30px", marginTop:"90px"}} className="about-us-section">
       <div className="about-us-content">
         <div className="text-content">
           <h1>About Us</h1>

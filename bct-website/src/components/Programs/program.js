@@ -14,7 +14,7 @@ const Program = () => {
     {
       icon: <EducationIcon />,
       title: "Education",
-      description: "Quality education and learning opportunities for all.",
+      description: "Quality education,learning opportunities for all.",
       borderColor: "#4169E1"
     },
     {

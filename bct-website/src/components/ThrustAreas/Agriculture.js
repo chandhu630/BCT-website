@@ -127,7 +127,7 @@ const Agriculture = () => {
             </div>
             <div className="content-container_BctAgri">
               <h1 className="showcase-title_BctAgri">{item.title}</h1>
-              <p className="showcase-description_BctAgri">{item.description}</p>
+              <p className="showcase-description_BctAgri" style={{color:"white"}}>{item.description}</p>
             </div>
           </div>
         ))}

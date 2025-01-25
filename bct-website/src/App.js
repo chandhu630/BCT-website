@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import About from "./components/About/about";
 import Contactus from "./components/Contact/contact";
@@ -29,8 +29,11 @@ import PWDs from "./components/ThrustAreas/PWDs";
 import Agriculture from "./components/ThrustAreas/Agriculture";
 import Community from "./components/ThrustAreas/Community";
 import DesignPage from "./components/ThrustAreas/DesignPage";
+import GPTSidebar from "./components/GPTSidebar/GPTSidebar"; // Import GPT Sidebar
 
 function App() {
+  const [isGPTVisible, setIsGPTVisible] = useState(false); // State for GPT Sidebar visibility
+
   const thrustAreaData = {
     trust1: { title: "Trust Area 1" },
     trust2: { title: "Trust Area 2" },
@@ -39,44 +42,60 @@ function App() {
     trust5: { title: "Trust Area 5" },
   };
 
+  // Function to toggle GPT Sidebar visibility
+  const toggleGPT = () => {
+    setIsGPTVisible(!isGPTVisible);
+  };
+
   return (
     <Router>
-      {/* Navbar displayed on all pages */}
-      <Navbar />
+      <div style={{ display: "flex", height: "100vh" }}>
+        {/* Main content */}
+        <div style={{ flex: isGPTVisible ? "75%" : "100%", overflow: "auto" }}>
+          <Navbar toggleGPT={toggleGPT} /> {/* Pass toggleGPT to Navbar */}
 
-      {/* Main Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/support" element={<SupportPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contactus />} />
-        <Route path="/career" element={<CarrierPage />} />
-        <Route path="/chatbot" element={<Chatbotpage />} />
-        <Route path="/legacy" element={<LegacyPage />} />
-        <Route path="/blogcard" element={<BlogCard />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/timeline" element={<Timeline />} />
-        <Route path="/team" element={<MeetOurTeam />} />
-        <Route path="/volunteer" element={<VolunteersForm />} />
-        <Route path="/donation" element={<DonationCard />} />
-        <Route path="/bankDetails" element={<BankDetailsPage />} />
-        <Route path="/slider" element={<ImageSlider />} />
-        <Route path="/staff" element={<StaffDirectory />} />
-        <Route path="/service" element={<ServiceDetails />} />
-        <Route path="/programs" element={<Program />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/trust-areas/:trustId" element={<DesignPage data={thrustAreaData} />} />
-        <Route path="/trust-areas/education/rhs" element={<RhSchools />} />
-        <Route path="/trust-areas/education/tribalEd" element={<TribalEd />} />
-        <Route path="/trust-areas/skill-dev/Iti" element={<ITI />} />
-        <Route path="/trust-areas/skill-dev/smart-centers" element={<SmartCenters />} />
-        <Route path="/trust-areas/pwds" element={<PWDs />} />
-        <Route path="/trust-areas/agri" element={<Agriculture />} />
-        <Route path="/trust-areas/community" element={<Community />} />
-      </Routes>
+          {/* Main Routes */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/support" element={<SupportPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contactus />} />
+            <Route path="/career" element={<CarrierPage />} />
+            <Route path="/chatbot" element={<Chatbotpage />} />
+            <Route path="/legacy" element={<LegacyPage />} />
+            <Route path="/blogcard" element={<BlogCard />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/team" element={<MeetOurTeam />} />
+            <Route path="/volunteer" element={<VolunteersForm />} />
+            <Route path="/donation" element={<DonationCard />} />
+            <Route path="/bankDetails" element={<BankDetailsPage />} />
+            <Route path="/slider" element={<ImageSlider />} />
+            <Route path="/staff" element={<StaffDirectory />} />
+            <Route path="/service" element={<ServiceDetails />} />
+            <Route path="/programs" element={<Program />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
+            <Route path="/trust-areas/:trustId" element={<DesignPage data={thrustAreaData} />} />
+            <Route path="/trust-areas/education/rhs" element={<RhSchools />} />
+            <Route path="/trust-areas/education/tribalEd" element={<TribalEd />} />
+            <Route path="/trust-areas/skill-dev/Iti" element={<ITI />} />
+            <Route path="/trust-areas/skill-dev/smart-centers" element={<SmartCenters />} />
+            <Route path="/trust-areas/pwds" element={<PWDs />} />
+            <Route path="/trust-areas/agri" element={<Agriculture />} />
+            <Route path="/trust-areas/community" element={<Community />} />
+          </Routes>
 
-      {/* Conditionally render the footer */}
-      <ConditionalFooter />
+          {/* Conditionally render the footer */}
+          <ConditionalFooter />
+        </div>
+
+        {/* GPT Sidebar */}
+        {isGPTVisible && (
+          <div style={{ flex: "25%", backgroundColor: "#f4f4f4", boxShadow: "-2px 0 5px rgba(0,0,0,0.1)", overflowY: "auto" }}>
+            <GPTSidebar />
+          </div>
+        )}
+      </div>
     </Router>
   );
 }
