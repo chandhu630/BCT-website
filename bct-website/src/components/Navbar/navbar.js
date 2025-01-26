@@ -54,10 +54,9 @@ const Navbar = () => {
               setShowAboutDropdown(!showAboutDropdown);
             }}
           >
-            <Link to="/about" className="about" id="AboutNav" style={{color:"black"}} onClick={handleNavLinkClick}>
-              About
+            <Link to="/about"  className="nav-link" onClick={handleNavLinkClick}>
+              About <i className="fas fa-chevron-down" style={{ fontSize: "8px" }}></i>
             </Link>
-            <i className="fas fa-chevron-down" style={{ fontSize: "8px" }}></i>
           </span>
           <div className={`dropdown-menu ${showAboutDropdown ? "show" : ""}`}>
             <p>

@@ -2,7 +2,7 @@
 
 :root {
   --ivory: #FFFFF0;
-  --primary: #149167;
+  --primary: #147169;
   --accent: #EC4342;
   --text-dark: #2C3E50;
 }
@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-  background: #15926a;
+  background: #EC4342;
   box-shadow: 0 2px 10px rgba(20, 145, 103, 0.1);
   position: fixed;
   top: 0;
@@ -20,7 +20,7 @@
   right: 0;
   z-index: 1000;
   font-family: 'Vollkorn', serif;
-  border-bottom: 0.5px solid #cccccce5;
+  border-bottom: 5px solid #F2F1E2;
 }
 
 .nav-brand {
@@ -45,7 +45,7 @@
   text-decoration: none;
 }
 .nav-link {
-  color: black;
+  color: #F2F1E2;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -54,7 +54,7 @@
 }
 
 .nav-link:hover {
-  color:var(--ivory);
+  color:#147169;
 }
 .AboutNav
 {
@@ -134,7 +134,7 @@
   transform: translateX(0);
 }
 .support-btn {
-  background: #EC4342;
+  background: #149167;
   color: var(--ivory) !important;
   padding: 0.8rem 1rem;
   border-radius: 8px;
@@ -144,7 +144,7 @@
 }
 
 .support-btn:hover {
-  background: #149167;
+  background: #EC4342;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(236, 67, 66, 0.2);
 }

@@ -116,14 +116,28 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="wave">
-        <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#EC4342"
-            fillOpacity="1"
-            d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,218.7C1120,235,1280,245,1360,250.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
+      <div className="wave"  >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        {/* Top curve with stroke */}
+        <path
+          style={{
+            stroke: "#F2F1E2",
+            strokeWidth: "9",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fill: "none"
+          }}
+          d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,218.7C1120,235,1280,245,1360,250.7L1440,256"
+        />
+        {/* Full shape with fill */}
+        <path
+          style={{
+            fill: "#147169",
+            fillOpacity: "1"
+          }}
+          d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,218.7C1120,235,1280,245,1360,250.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        />
+      </svg>
       </div>
       <div className='ProgramsPage' id="programs-part">
         <div className="subheading1">Our Programs</div>
