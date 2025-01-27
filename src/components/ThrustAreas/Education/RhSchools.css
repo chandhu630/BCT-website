@@ -1,0 +1,272 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* App Container */
+.Rhapp {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.rhpage-header {
+  /* background-color: #004d4d; */
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.rhpage-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.rhpage-header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.page-header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button, .button-outline {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #007b7b;
+  color: #fff;
+  border: none;
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 2px solid #007b7b;
+  color: #007b7b;
+}
+
+.button:hover, .button-outline:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
+.main-content {
+  padding: 40px 20px;
+}
+
+/* Introduction Section */
+.introduction-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.introduction-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.introduction-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Features Section */
+.features-sectionRhs {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.feature-cardRhs, .educational-featureRhs, .social-featureRhs, .infrastructure-featureRhs {
+  flex: 1;
+  padding: 30px;
+  background-color: #e5f6f6;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.iconRhs {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Academic Excellence Section */
+.Rhsacademic-excellence-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-containersRhs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-cardRhs {
+  background-color:rgb(244, 242, 238);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.info-cardRhs .iconRhs {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.info-cardRhs h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Skills Training Section */
+.skills-training-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  background-color: #e5f6f6;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.skill-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .features-sectionRhs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .rhpage-header h1 {
+    font-size: 28px;
+  }
+
+  .rhpage-header p {
+    font-size: 16px;
+  }
+
+  .page-header-buttons {
+    flex-direction: column;
+  }
+
+  .button, .button-outline {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .features-sectionRhs {
+    flex-direction: column;
+  }
+  .features-sectionRhs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 cards per row */
+    grid-gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+
+  .features-sectionRhs .feature-cardRhs {
+    margin-bottom: 20px;
+  }
+
+  .card-containersRhs {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .rhpage-header h1 {
+    font-size: 24px;
+  }
+
+  .rhpage-header p {
+    font-size: 14px;
+  }
+
+  .page-header-buttons {
+    gap: 10px;
+  }
+
+  .button, .button-outline {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .introduction-section h2 {
+    font-size: 24px;
+  }
+
+  .introduction-section p {
+    font-size: 16px;
+  }
+
+  .feature-cardRhs,
+  .educational-featureRhs,
+  .social-featureRhs,
+  .infrastructure-featureRhs {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
