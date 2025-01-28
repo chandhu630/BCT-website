@@ -34,7 +34,7 @@ p {
 }
 
 .learn-more {
-  background-color: #c64848;
+  background-color: #15926a;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -45,7 +45,7 @@ p {
 .timelinecolor
 {
   color:#c64848;
-  border: 2px solid #15926a;
+  border: 2px solid #c64848;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
@@ -54,11 +54,11 @@ p {
 }
 .timelinecolor:hover
 {
-  border: 2px solid #c64848;
+  border: 2px solid #15926a;
 }
 
 .learn-more:hover {
-  background-color: #15926a;
+  background-color: #c64848;
 }
 
 .illustration {

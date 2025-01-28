@@ -34,7 +34,7 @@ const Footer = () => {
           <ul className="footer-links">
 
             <li><Link to ="/about">About Us</Link></li>
-            <li><Link to ="/trust-areas">Trust Areas</Link></li>
+            {/* <li><Link to ="/trust-areas">Trust Areas</Link></li> */}
             <li><Link to ="/blog">Blogs</Link></li>
             <li><Link to ="/support">Support Us</Link></li>
             <li><Link to ="/contact">Contact Us</Link></li>
@@ -73,13 +73,7 @@ const Footer = () => {
         <div className="footer-bottom-left">
           <p>© 2024 Bhagavatula Charitable Trust. All rights reserved.</p>
         </div>
-        <div className="footer-bottom-right">
-          <ul className="footer-bottom-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-          </ul>
-        </div>
+       
       </div>
     </footer>
   );

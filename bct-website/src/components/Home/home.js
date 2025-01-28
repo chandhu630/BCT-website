@@ -6,7 +6,7 @@ import Program from '../Programs/program';
 import Footer from '../Footer/footer';
 import ImageSlider from '../ImageSlider/imageSlider';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import BlogPage from '../Blogs/blog';
+
 
 
 const Home = () => {
@@ -100,9 +100,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="card-container">
+        <div className="cardHcontainer">
           {counterData.map((data) => (
-            <div className="card" key={data.id}>
+            <div className="card_Home" key={data.id}>
               <h3
                 ref={el => countersRef.current.push(el)}
                 data-value={data.value}

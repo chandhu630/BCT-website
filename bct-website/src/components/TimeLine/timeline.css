@@ -5,6 +5,7 @@
     margin: 40px auto;
     max-width: 1200px;
     padding: 20px;
+    background-color:#F2F1E2;
   }
   
   /* Title */
@@ -42,7 +43,7 @@
   .timeline-dot.active {
     background: #EC4342;
     border-color: #a81111;
-    color: white;
+    color: #F2F1E2;
   }
   
   /* Content */
