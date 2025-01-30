@@ -1,0 +1,426 @@
+.container_home {
+  /* max-width: 100vw; */
+  width: 100vw;
+  height: 750px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  transform: translateY(60px);
+  border-bottom-width: 10px;
+  /* border: 2px solid red; */
+  /* background-color: #333; */
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.displayDiv {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
+  text-align: center;
+  padding: 20px;
+  animation: backgroundSlider 12s infinite;
+}
+
+@keyframes backgroundSlider {
+  0% {
+    background-image: url('/public/imgs/tribalShool.png');
+  }
+ 
+  66% {
+    background-image: url('/public/imgs/pwds.png');
+  }
+  100% {
+    background-image: url('/public/imgs/boys.png');
+  }
+  33% {
+    background-image: url('/public/imgs/agri/testing.jpeg');
+  }
+  100% {
+    background-image: url('/public/imgs/agri/Classroom.JPG');
+  }
+}
+
+
+.displayDiv::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(18, 17, 17, 0.5);  */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2; 
+  font-size: 1.5rem;
+}
+
+.text-container {
+  flex: 1 1 40%;
+  min-width: 300px;
+  margin-left: 20px;
+  padding: 35px;
+  text-align: left;
+}
+.heading_home{
+  margin-top: 100px;
+  /* border: 1px solid red; */
+}
+ .heading_home,.subheading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: #15926A;
+  /* color: #7b0707b5; */
+}
+.subheading{
+  color: white;
+}
+
+.description {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 28px;
+  font-size: 1.2rem;
+  word-spacing: 3px;
+  font-weight: 400;
+  filter: brightness(1.5);
+  
+}
+
+.buttonHome {
+  margin-top: 20px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.buttonHome {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-primaryhome {
+  /* background-color: #DA545A; */
+  background-color: #15926A;
+  margin-top: 20px;
+  color:white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.button-primary:hover {
+  background-color: #15926A;
+}
+
+.button-secondaryhome {
+  margin-top: 20px;
+  color:#15926A;
+  border: 2px solid #15926A;
+  background-color:white !important;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button-secondaryhome:hover {
+  background-color: rgba(21, 146, 106, 0.1);
+}
+
+.card-container-home {
+  flex: 1 1 40%;
+  /* border: 1px solid red; */
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-home {
+  flex: 1 1 45%;
+  /* background-color:rgba(59, 52, 52, 0.5); */
+  background-color:rgba(59, 52, 52, 0.858);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #e9f5ee;
+  height: 120px;
+  /* border: 1px solid green; */
+}
+
+.card-home h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #15926A;
+  /* border: 1px solid red; */
+}
+
+.card-home p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 350;
+  transform: translateY(-15px);
+  /* border: 1px solid red; */
+}
+  
+  @keyframes countUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card-home h3 {
+    /* ... other styles ... */
+    animation: countUp 2s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .counting {
+    transition: content 0.8s ease-out;
+  }
+  
+  .card-home {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ProgramsPage{
+  /* width: 100vw; */
+  position: relative;
+  top: 250px;
+  /* border: 5px solid green; */
+  scroll-margin-top: 100px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.sliderPart{
+  /* width: 100vw; */
+  position: relative;
+  top: 350px;
+  background: linear-gradient(to bottom, #FDFFFD, #F7FEF9, rgb(241, 253, 245));
+}
+.subheading1{
+  text-align: center;
+  font-size: 36px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  color: rgb(17, 24, 39);
+  line-height: 40px;
+  padding-top: 30px;
+}
+.footerPageHome{
+  margin-top: 400px;
+}
+@media (max-width: 1024px) {
+  .container {
+    height: auto;
+    /* border: 2px solid Blue; */
+    padding: 50px 20px; /* Adjust padding for tablets */
+  }
+
+  .displayDiv {
+    flex-direction: column;
+    align-items: center; /* Center align for smaller screens */
+    padding: 50px 20px;
+    margin-top: 49px;
+    /* border: 1px solid red; */
+  }
+
+  .text-container {
+    width: 100%;
+    text-align: center; /* Center align text on smaller screens */
+    padding: 15px;
+  }
+  .heading_home{
+    margin-top: 700px !important;
+    /* border: 1px solid red; */
+  }
+  .description{
+    font-size: 25px !important;
+  }
+  .buttons {
+    margin-top: 15px;
+    /* margin-top: 180px; */
+    /* border: 1px solid red; */
+  }
+
+  .card-container-home {
+    width: 100%;
+    padding: 30px;
+    /* border: 2px solid red !important; */
+    /* margin-top: 380px; */
+    /* gap: 15px; Reduce gap for smaller screens */
+  }
+
+  .card-home {
+    flex: 1 1 100%;
+    max-width: 300px;
+    margin: 0 auto; /* Center cards */
+  }
+  .ProgramsPage{
+    margin-top: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 30px 15px;
+    /* margin-top: 100px; */
+  }
+  .displayDiv{
+    /* border: 2px solid red; */
+    margin-top: 45px;
+  }
+  .heading_home{
+    text-align: center;
+    font-size: 2.3rem !important;
+    line-height: 40px;
+    margin-top: 160px !important;
+    /* border: 1px solid red; */
+  }
+  .heading, .subheading {
+    text-align: center; 
+  }
+
+  .card-container-home {
+    width: 100%;
+    gap: 15px; 
+    margin: auto;
+  }
+
+  .card-home {
+    flex: 1 1 100%;
+    max-width: 300px;
+    margin: 0 auto; 
+  }
+  .ProgramsPage{
+    margin: 50px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container_home {
+    width: 100%;  
+    height: auto; 
+  }
+  .text-container{
+    transform: translateY(-180px);
+  }
+  .heading_home {
+    /* font-size: calc(1.5rem + 2vw);  */
+    font-size: 1.5rem;
+    /* margin-top: 50px; */
+    /* border: 1px solid red; */
+  } 
+  .description {
+    font-size: 18px !important;
+    line-height: 1.2rem;
+    padding: 0 10px;
+  } 
+  .card-container-home {
+    /* gap: 10px; */
+    width: 100%;
+    transform: translateY(-180px);
+  }
+  .card-home {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  #programs-part{
+    margin-top: 700px;
+    /* border: 1px solid red; */
+  }
+  .subheading1 {
+    font-size: 2rem; 
+    margin-left: -80px; 
+  }
+  .subheading {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
+  }
+  .button {
+    font-size: 15px;
+    width: 60%;
+    text-align: center; 
+  }
+  .displayDiv{
+    display: grid;
+    
+  }
+  .footerPage{
+    margin-top: 150px;
+  }
+  .footerPageHome{
+    margin-top: 200px;
+  }
+}
+
+/* Make sure buttons are clickable */
+.buttons {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
