@@ -29,7 +29,7 @@ const BankDetailsPage = () => {
       <div className="bank-details-section">
         <div className="bank-card">
           <div className="card-header">
-            <img src="./imgs/boat.png" alt="SBI Logo" className="bank-logo" />
+            <img src="./imgs/sbilogo.png" alt="SBI Logo" className="bank-logo" />
             <h3>Bank Transfer Details</h3>
           </div>
           
@@ -96,7 +96,7 @@ const BankDetailsPage = () => {
         <h3>Need Help?</h3>
         <p>If you have any questions about making a donation, please contact us:</p>
         <div className="contact-buttons">
-            <a href="tel:+919876543210" className="contact">
+            <a href="tel:+91 8500359819" className="contact">
                 <i className="fas fa-phone"></i> Call Us
             </a>
             <a href="mailto:support@bct.org" className="contact">
@@ -105,7 +105,7 @@ const BankDetailsPage = () => {
 
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };

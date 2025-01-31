@@ -91,7 +91,7 @@ const MeetOurTeam = () => {
           {teamMembers.slice(0, 3).map((member, index) => (
             <div key={index} className="team-card">
               <div className="team-image-container">
-                <img src={member.image} alt={member.name} className="team-image" />
+                <img src={member.image} alt={member.name} className="team-image" style={{width:"100%",}}/>
                 <div className="team-overlay">
                   <p className="team-description">{member.description}</p>
                 </div>

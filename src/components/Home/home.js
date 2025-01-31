@@ -167,7 +167,7 @@ const Home = () => {
   <path
     style={{
       // stroke: "#F2F1E2",
-      stroke: "yellow",
+      stroke: "white",
       strokeWidth: "9",
       strokeLinecap: "round",
       strokeLinejoin: "round",

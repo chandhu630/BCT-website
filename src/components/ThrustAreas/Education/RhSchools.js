@@ -59,7 +59,8 @@ function RhSchools() {
 
   const optionalSkills = [
     {
-      icon: "🧵",
+           icon: "🧵",
+      // icon: "/imgs/tailoring.png", 
       title: "Tailoring",
       description:
         "Learn professional garment making and clothing repair skills.",

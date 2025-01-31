@@ -15,44 +15,44 @@ const ImageSlider = () => {
       id: 1,
       icon: "🎓",
       title: "Comprehensive Education Initiative at Paderu",
-      image: "/imgs/boat.png",
+      image: "/imgs/student.png",
       
     },
     {
       id: 2,
       icon: "👥",
       title: "Central CAG meeting held",
-      image: "/imgs/kvk.jpeg",
+      image: "/imgs/cc.png",
         },
     {
       id: 3,
       icon: "🎨",
       title: "Sankranti on campus",
-      image: "/imgs/tribalShool.png",
+      image: "/imgs/rangoli.png",
     },
     {
       id: 4,
       icon: "🤝",
       title: "SAC meeting held",
-      image: "/imgs/RHS.png",
+      image: "/imgs/SAPmeeting.jpeg",
     },
     {
       id: 5,
       icon: "♻️",
       title: "Waste Decomposer Training",
-      image: "/imgs/kvk.jpeg",
+      image: "/imgs/decomposer.png"
     },
     {
       id: 6,
       icon: "🏢",
       title: "Sri PV Venkatesan Center Revamped",
-      image: "/imgs/group.png",
+      image: "/imgs/pv.png",
    },
     {
         id: 7,
         icon: "🐃",
         title: "Buffalo distribution to PWDs",
-        image: "/imgs/boys.png",
+        image: "/imgs/pwds.png",
     },
     {
         id: 8,
@@ -64,7 +64,7 @@ const ImageSlider = () => {
         id: 9,
         icon: "👨‍👩‍👧‍👦",
         title: "Meeting the parents",
-        image: "/imgs/boat.png", 
+        image: "/imgs/meeting.png", 
     }
   ];
 

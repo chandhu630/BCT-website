@@ -205,7 +205,7 @@ const SupportPage = () => {
       icon: <SchoolIcon sx={{ fontSize: 80, color: '#4caf50' }} />,
       description: "Support teachers for academic rural training in a subject",
       buttonText: "Support Teachers",
-      link: "/donate/teacher",
+      link: "/staff",
     },
     {
       title: "Support a Student",
@@ -341,7 +341,7 @@ const SupportPage = () => {
       icon: <AccountBalanceIcon sx={{ fontSize: 40, mr: 2, color: '#2196f3' }} />,
       paymentMethods: paymentMethods.indian,
       buttonText: "Donate in INR",
-      link: "/donate/inr" // Add your internal link here
+      link: "/bankDetails" // Add your internal link here
     },
     {
       title: "International Donations",
