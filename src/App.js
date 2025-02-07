@@ -32,7 +32,7 @@ import Community from "./components/ThrustAreas/Community";
 import DesignPage from "./components/ThrustAreas/DesignPage";
 import GPTSidebar from "./components/GPTSidebar/GPTSidebar"; // Import GPT Sidebar
 
-// import PDFViewer from "./components/PDF/PDFViewer";
+import NewsletterPage from "./NewsletterPage";
 import "./App.css"
 
 function App() {
@@ -88,7 +88,7 @@ function App() {
             <Route path="/trust-areas/pwds" element={<PWDs />} />
             <Route path="/trust-areas/agri" element={<Agriculture />} />
             <Route path="/trust-areas/community" element={<Community />} />
-            {/* <Route path="/newsletter" element={<PDFViewer />}/> */}
+            <Route path="/newsletter" element={<NewsletterPage />}/>
           </Routes>
 
           {/* Conditionally render the footer */}

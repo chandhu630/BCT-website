@@ -122,10 +122,10 @@ const Home = () => {
     <div className="container_home">
       <div className="displayDiv">
         <div className="text-container">
-          <div className="heading_home">Transforming Rural Lives</div>
-          <div className="subheading">Empowering Communities</div>
+          <div className="heading_home">Transforming Rural<br/>Lives</div>
+          <div className="subheading">Empowering<br/>Communities</div>
           <p style={{ color: "rgb(241, 237, 161)" }} className="description">
-            Building sustainable futures through education, agriculture, and skill development in Visakhapatnam's villages. Together, we're creating models of learning and growth.
+            Building sustainable futures through education, agriculture, and skill<br/> development in Visakhapatnam's villages. Together, we're creating <br/>models of learning and growth.
           </p>
           <div className="buttons">
             <Link 
@@ -191,10 +191,10 @@ const Home = () => {
         style={{ scrollMarginTop: '100px' }}
       >
         <div className="subheading1">Our Programs</div>
-        <Program />
-      </div>
-      <div className='sliderPart'>
-        <div className="subheading1">Stories of Change</div>
+          <Program />
+        </div>
+      <div className='sliderPart' id='storiesofChange'>
+        <div className="subheading1" id='storiesHeading'>Stories of Change</div>
         <ImageSlider />
         {/* <BlogPage /> */}
       </div>

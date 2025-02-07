@@ -162,7 +162,7 @@
 .card-container-home {
   flex: 1 1 40%;
   /* border: 1px solid red; */
-  padding: 30px;
+  padding: 20px 80px;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -259,6 +259,7 @@
 }
 .sliderPart{
   /* width: 100vw; */
+  padding:0px 100px;
   position: relative;
   top: 150px;
   background: linear-gradient(to bottom, #FDFFFD, #F7FEF9, rgb(241, 253, 245));
@@ -275,158 +276,213 @@
 .footerPageHome{
   margin-top: 200px;
 }
+#storiesHeading{
+  margin-bottom: 50px !important;
+  /* border: 2px solid red; */
+}
+
+/* Tablet and smaller desktop screens */
 @media (max-width: 1024px) {
-  .container {
+  .container_home {
     height: auto;
-    /* border: 2px solid Blue; */
-    padding: 50px 20px; /* Adjust padding for tablets */
+    overflow-x: hidden;
   }
 
   .displayDiv {
-    flex-direction: column;
-    align-items: center; /* Center align for smaller screens */
-    padding: 50px 20px;
-    margin-top: 49px;
-    /* border: 1px solid red; */
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .text-container {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .heading_home {
+    font-size: 3rem;
+    margin-top: 50px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    padding: 20px 0;
+  }
+
+  .card-container-home {
+    padding: 20px;
+    gap: 15px;
+    margin-top: 50px;
+  }
+
+  .card-home {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .container_home {
+    transform: translateY(40px);
+  }
+
+  .displayDiv {
+    height: 70vh;
+    padding: 15px;
   }
 
   .text-container {
     width: 100%;
-    text-align: center; /* Center align text on smaller screens */
     padding: 15px;
-  }
-  .heading_home{
-    margin-top: 700px !important;
-    /* border: 1px solid red; */
-  }
-  .description{
-    font-size: 25px !important;
-  }
-  .buttons {
-    margin-top: 15px;
-    /* margin-top: 180px; */
-    /* border: 1px solid red; */
-  }
-
-  .card-container-home {
-    width: 100%;
-    padding: 30px;
-    /* border: 2px solid red !important; */
-    /* margin-top: 380px; */
-    /* gap: 15px; Reduce gap for smaller screens */
-  }
-
-  .card-home {
-    flex: 1 1 100%;
-    max-width: 300px;
-    margin: 0 auto; /* Center cards */
-  }
-  .ProgramsPage{
-    margin-top: 400px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    padding: 30px 15px;
-    /* margin-top: 100px; */
-  }
-  .displayDiv{
-    /* border: 2px solid red; */
-    margin-top: 45px;
-  }
-  .heading_home{
-    text-align: center;
-    font-size: 2.3rem !important;
-    line-height: 40px;
-    margin-top: 160px !important;
-    /* border: 1px solid red; */
-  }
-  .heading, .subheading {
-    text-align: center; 
-  }
-
-  .card-container-home {
-    width: 100%;
-    gap: 15px; 
-    margin: auto;
-  }
-
-  .card-home {
-    flex: 1 1 100%;
-    max-width: 300px;
-    margin: 0 auto; 
-  }
-  .ProgramsPage{
-    margin: 50px;
-    padding: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .container_home {
-    width: 100%;  
-    height: auto; 
-  }
-  .text-container{
-    transform: translateY(-180px);
   }
   .heading_home {
-    /* font-size: calc(1.5rem + 2vw);  */
-    font-size: 1.5rem;
-    /* margin-top: 50px; */
-    /* border: 1px solid red; */
-  } 
-  .description {
-    font-size: 18px !important;
-    line-height: 1.2rem;
-    padding: 0 10px;
-  } 
-  .card-container-home {
-    /* gap: 10px; */
-    width: 100%;
-    transform: translateY(-180px);
+    font-size: 2.5rem;
+    margin-top: 250px !important;
+    /* transform: translateY(120px); */
   }
-  .card-home {
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  #programs-part{
-    margin-top: 700px;
-    /* border: 1px solid red; */
-  }
-  .subheading1 {
-    font-size: 2rem; 
-    margin-left: -80px; 
-  }
+
   .subheading {
     font-size: 2rem;
   }
 
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
   .buttons {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: center; 
-    align-items: center;
+    gap: 15px;
+    width: 50%;
     margin: auto;
+    transform: translateY(-50px);
   }
-  .button {
-    font-size: 15px;
-    width: 60%;
-    text-align: center; 
+
+  .buttonHome {
+    width: 80%;
+    max-width: 250px;
+    text-align: center;
   }
-  .displayDiv{
-    display: grid;
-    
+
+  .card-container-home {
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 100px;
   }
-  .footerPage{
+
+  .card-home {
+    flex: 1 1 100%;
+    width: 90%;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .wave {
+    bottom: 100px;
+    height: 200px;
+    transform: translateY(-3750px);
+  }
+
+  .ProgramsPage {
+    top: 40px;
+    width: 99%;
+  }
+  .sliderPart{
+    width: 100%;
+    padding:4px;
+  }
+
+  .subheading1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  .subheading1{
+    text-align: center;
+  }
+  #storiesofChange{
+    margin-top: -70px;
+    /* border: 2px solid red; */
+  }
+  .buttons{
+    padding: 10px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .container_home {
+    transform: translateY(30px);
+  }
+
+  .displayDiv {
+    height: 60vh;
+  }
+
+  .text-container {
+    padding: 10px;
+  }
+
+  .heading_home {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-top: 20px;
+  }
+
+  .subheading {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem !important;
+    padding: 10px 0;
+  }
+
+  .buttonHome {
+    width: 90%;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .card-home {
+    height: auto;
+    padding: 15px;
+    margin: 8px 0;
+  }
+
+  .card-home h3 {
+    font-size: 1.8rem;
+  }
+
+  .card-home p {
+    font-size: 1rem;
+  }
+
+  .wave {
+    bottom: 80px;
+    height: 150px;
+  }
+
+  .footerPageHome {
     margin-top: 150px;
   }
-  .footerPageHome{
-    margin-top: 200px;
+}
+
+/* Height-based media query for very tall mobile screens */
+@media (min-height: 800px) and (max-width: 768px){
+  .displayDiv {
+    height: 50vh;
   }
+  .text-container {
+    transform: translateY(0);
+  }
+  .card-container-home {
+    transform: translateY(0);
+  }
+  
 }
 
 /* Make sure buttons are clickable */

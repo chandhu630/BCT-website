@@ -105,9 +105,9 @@ const Footer = () => {
 
         {/* Newsletter Section */}
         <div className="footer-section">
-          <h4 className="footer-title">Newsletter</h4>
+          <h4 className="footer-title">Links</h4>
           <div>
-            <Link to ="/newsletter">Newsletter</Link>
+            <Link to ="/newsletter" className='newsletter-footer'>Newsletter</Link>
           </div>
           <p>Subscribe to our newsletter for updates and news.</p>
             <button

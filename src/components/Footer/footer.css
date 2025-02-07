@@ -163,7 +163,11 @@
 .footer-bottom-links a:hover {
     color: #15926a;
 }
+.newsletter-footer{
+    text-decoration: none;
+    color: #666;
 
+}
 /* Footer Container for Medium Screens */
 @media (max-width: 768px) {
     .footer-container {
