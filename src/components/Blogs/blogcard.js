@@ -34,7 +34,7 @@ const BlogDetails = () => {
       excerpt: "On January 7, BCT school organized a rangoli (muggulu) competition.",
       content: `<p>BCT school celebrated Sankranti on January 7 with a vibrant rangoli competition for children and staff. Judges awarded prizes for the colorful creations, and celebrations extended to BCT TMF SMART centers.In villages, the Sankranti Sambaralu ran from January 13–31, 2022, across 60 villages.
         </p><p> Events included traditional games, folk dances, bhajans, and sports competitions. Villages raised funds, and BCT distributed 3000 certificates of appreciation. The program fostered unity and showcased youth leadership in preserving culture.</p> `,
-      image: "imgs/rangoli.png",
+      image: "imgs/sankranthi.jpeg",
       date: "2024-01-07",
     },
     {

@@ -64,10 +64,9 @@
   padding: 0.5rem 1rem;
   transition: all 0.3s ease;
 }
-.AboutNav:hover
-
+#AboutNav:hover
 {
-  color: var(--ivory);
+  color: var(--ivory) !important;
  
 }
 
@@ -140,6 +139,14 @@
   visibility: visible;
   transform: translateX(0);
   transform: translateY(50px);
+}
+.dropdown-menu p:hover #sub-dropdown2 {
+  /* border: 2px solid red; */
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  padding: 6px;
+  transform: translateY(8px);
 }
 .support-btn {
   background: #149167;

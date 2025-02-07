@@ -71,18 +71,6 @@ const VolunteersForm = () => {
       <form className="form-right" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter a valid email address"
-              required
-            />
-          </div>
-          <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -94,8 +82,21 @@ const VolunteersForm = () => {
               required
             />
           </div>
+          <div className="form-group">
+            <label htmlFor="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter a valid email address"
+              required
+            />
+          </div>
+          
         </div>
-        <div className="form-row">
+        {/* <div className="form-row">
           <div className="form-group">
             <label htmlFor="startDate">Start Date</label>
             <input
@@ -119,7 +120,7 @@ const VolunteersForm = () => {
               required
             />
           </div>
-        </div>
+        </div> */}
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="phone">Phone</label>
@@ -159,7 +160,7 @@ const VolunteersForm = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Enter your message"
+              placeholder="Enter your message including period of stay"
               required
             ></textarea>
           </div>

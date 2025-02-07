@@ -106,6 +106,9 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="footer-section">
           <h4 className="footer-title">Newsletter</h4>
+          <div>
+            <Link to ="/newsletter">Newsletter</Link>
+          </div>
           <p>Subscribe to our newsletter for updates and news.</p>
             <button
              onClick={handleYouTubeSubscribe}

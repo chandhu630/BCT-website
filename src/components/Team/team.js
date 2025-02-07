@@ -14,7 +14,7 @@ const teamMembers = [
     role: 'Vice-President',
     description:
       'Director & Dean (Engineering Research and Industrial Consultancy), Gayatri Vidya Parishad Scientific and Industrial Research Centre. Former Director (R&D) at VIT University.',
-    image: './imgs/Tatavarti.png',
+    image: './imgs/tatavatri.jpeg',
   },
   {
     name: 'Sri B Sri Ram Murty',
@@ -35,7 +35,7 @@ const teamMembers = [
     role: 'Joint Secretary',
     description:
       'A development professional with more than 38 years of experience in managing non-governmental organizations. He holds a Masters degree.',
-    image: './imgs/soma.png',
+    image: './imgs/somayajulu.jpeg',
   },
 ];
 

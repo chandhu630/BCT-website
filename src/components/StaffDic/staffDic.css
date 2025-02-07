@@ -6,8 +6,9 @@
   /* Hero Section */
   .hero-section {
     height: 400px;
-    background:url('../../../public/imgs/teachers/teachersLayout.png');
-    background-size: cover;
+    background:url('../../../public/imgs/teachers/techerbanner.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;

@@ -28,11 +28,11 @@ const Program = () => {
           path: "/trust-areas/education/rhs",
           description: "Residential High Schools"
         },
-        {
-          title: "Tribal Education",
-          path: "/trust-areas/education/tribalEd",
-          description: "Tribal Education Programs"
-        }
+        // {
+        //   title: "Tribal Education",
+        //   path: "/trust-areas/education/tribalEd",
+        //   description: "Tribal Education Programs"
+        // }
       ]
     },
     {
@@ -49,9 +49,9 @@ const Program = () => {
           description: "Skill Development Centers"
         },
         {
-          title: "Vocational Training",
+          title: "ITI",
           path: "/trust-areas/skill-dev/smart-centers",
-          description: "Vocational Training Programs"
+          description: "Industrial Training Institute"
         }
       ]
     },

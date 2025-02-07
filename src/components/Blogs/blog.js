@@ -128,7 +128,7 @@ const BlogPage = () => {
       title: "Sankranti on Campus",
       excerpt: "On January 7, BCT school organized a rangoli (muggulu) competition.",
       content: "Full content for post 3...",
-      image: "imgs/rangoli.png",
+      image: "/imgs/rangoli1.jpeg",
       date: "8th June 2022",
     },
     {
@@ -144,7 +144,7 @@ const BlogPage = () => {
       title: "SAC meeting held",
       excerpt: "On March 11 at BCT KVK 28 participants came together for the annual Scientific Advisory",
       content: "Next.js is a React framework for building fast apps...",
-      image: "imgs/sac.png",
+      image: "imgs/SAPmeeting.jpeg",
       date: "8th June 2022",
     },
     {

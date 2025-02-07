@@ -28,7 +28,7 @@ const ImageSlider = () => {
       id: 3,
       icon: "🎨",
       title: "Sankranti on campus",
-      image: "/imgs/rangoli.png",
+      image: "/imgs/sankranthi.jpeg",
     },
     {
       id: 4,

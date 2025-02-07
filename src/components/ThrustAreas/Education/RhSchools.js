@@ -1,189 +1,181 @@
-import React from 'react';
-import './RhSchools.css';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaGraduationCap, FaTools, FaBuilding, FaBus, FaPalette, FaStethoscope, FaLightbulb, FaBook, FaDesktop, FaUtensils } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./RhSchools.css";
 
-function RhSchools() {
-  const academicData = [
-    {
-      icon: "📘",
-      title: "State-Approved Curriculum",
-      description:
-        "Following government regulations and state syllabus while maintaining high academic standards.",
-    },
-    {
-      icon: "💡",
-      title: "Progressive Methods",
-      description:
-        "Implementation of multimedia and modern teaching techniques for enhanced learning experience.",
-    },
-    {
-      icon: "🏢",
-      title: "Subject-Specific Centers",
-      description:
-        "Dedicated learning centers with comprehensive reference materials for each subject.",
-    },
-    {
-      icon: "💻",
-      title: "Computer Skills",
-      description:
-        "Comprehensive computer education including MS Office, HTML, and hardware basics.",
-    },
-    {
-      icon: "📊",
-      title: "Regular Evaluation",
-      description:
-        "Continuous assessment and focused attention on students needing additional support.",
-    },
-    {
-      icon: "📚",
-      title: "Learning Resources",
-      description:
-        "Easy access to study materials and resources at each learning center.",
-    },
-  ];
-
-  const coreSkills = [
-    {
-      icon: "🎡",
-      title: "Charkha Spinning",
-      description:
-        "Mandatory skill training in traditional spinning wheel operation, promoting self-reliance and cultural heritage.",
-    },
-    {
-      icon: "🌾",
-      title: "Agriculture/Horticulture",
-      description:
-        "Essential training in farming techniques and plant cultivation.",
-    },
-  ];
-
-  const optionalSkills = [
-    {
-           icon: "🧵",
-      // icon: "/imgs/tailoring.png", 
-      title: "Tailoring",
-      description:
-        "Learn professional garment making and clothing repair skills.",
-    },
-    {
-      icon: "🪡 ",
-      title: "Embroidery",
-      description:
-        "Master the art of decorative needlework and textile embellishment.",
-    },
-    {
-      icon: "💡",
-      title: "Electrical Skills",
-      description:
-        "Basic electrical maintenance and repair training for practical applications.",
-    },
-  ];
+const RhSchools = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
-    <div style={{marginTop:"60px"}}  className="Rhapp">
-      <header className="rhpage-header">
-        <h1>BCT Residential Model High School</h1>
-        <p>Empowering Rural India through Value-based Education since 1995</p>
-        <div className="page-header-buttons">
-        <Link 
-              to="/support-us" 
-              className="button"
-            >
-              Support Us
-            </Link>
-            <Link 
-              to="/contact" 
-              className="button button-outline"
-            >
-             Contact Us
-            </Link>
-          {/* <button className="button">Learn More</button>
-          <button className="button button-outline">Contact Us</button> */}
+    <div className="rhs-main-container">
+      {/* Banner Section */}
+      <div className="rhs-banner" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/rhsbuilding.png)` }}>
+        <div className="banner-overlay">
+          <h1>Residential Hign School</h1>
+          <div className="banner-content">
+            <p>
+              Rural India needs an education system that specifically answers its needs and fills its shortcomings. 
+              Established in 1995, the BCT Residential Model High School answers those needs through its 
+              government-recognized value-based, skill-oriented rurally-biased approach.
+            </p>
+          </div>
         </div>
-      </header>
+      </div>
 
-      <main className="main-content">
-        <section className="introduction-section">
-          <h2>Empowering Rural Education Since 1995</h2>
-          <p>
-            Rural India needs an education system that specifically answers its needs and fills its shortcomings.<br />
-            Established in 1995, the BCT Residential Model High School answers those needs through its<br />
-            government-recognized value-based, skill-oriented rurally-biased approach.<br />
-          </p>
-        </section>
-
-        <section className="features-sectionRhs">
-          <div className="feature-cardRhs academic-featureRhs">
-            <div className="iconRhs">📘</div>
-            <h3>Academics</h3>
-            <p>State-approved curriculum with progressive teaching methods and multimedia learning.</p>
+      {/* Photo Gallery */}
+      <div className="photo-strip">
+        <div className="photo-item">
+          <img src={process.env.PUBLIC_URL + "/imgs/rangoli.jpeg"} alt="Sankranti celebrations" />
+          <div className="photo-overlay">
+            <h3>Sankranti on campus</h3>
           </div>
-
-          <div className="feature-card educational-featureRhs">
-            <div className="iconRhs">📋</div>
-            <h3>Skill Education</h3>
-            <p>Comprehensive vocational training including agriculture, crafts, and technical skills.</p>
+        </div>
+        <div className="photo-item">
+          <img src={process.env.PUBLIC_URL + "/imgs/picnic.png"} alt="School picnic" />
+          <div className="photo-overlay">
+            <h3>Picnic time for school students</h3>
           </div>
-
-          <div className="feature-card social-featureRhs">
-            <div className="iconRhs">👥</div>
-            <h3>Social Animation</h3>
-            <p>Community engagement through cultural activities and social awareness programs.</p>
+        </div>
+        <div className="photo-item">
+          <img src={process.env.PUBLIC_URL + "/imgs/parentsmeeting.png"} alt="Parents meeting" />
+          <div className="photo-overlay">
+            <h3>Meeting the parents</h3>
           </div>
+        </div>
+      </div>
 
-          <div className="feature-card infrastructure-featureRhs">
-            <div className="iconRhs">🏢</div>
-            <h3>Infrastructure</h3>
-            <p>Fully equipped centers for learning and hands-on training, built to support student growth.</p>
+      {/* Core Features */}
+      <div className="core-features">
+        <motion.div 
+          className="feature-box academics"
+          whileHover={{ y: -10 }}
+          data-aos="fade-up"
+        >
+          <FaGraduationCap className="feature-icon" />
+          <h2>Academics</h2>
+          <ul>
+            <li>State syllabus curriculum</li>
+            <li>Multimedia learning methods</li>
+            <li>Regular evaluation system</li>
+            <li>Subject-specific centers</li>
+            <li>Advanced computer training</li>
+          </ul>
+        </motion.div>
+
+        <motion.div 
+          className="feature-box skills"
+          whileHover={{ y: -10 }}
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <FaTools className="feature-icon" />
+          <h2>Skill Education</h2>
+          <div className="skills-grid">
+            <div>
+              <h3>Mandatory</h3>
+              <ul>
+                <li>Charkha spinning</li>
+                <li>Agriculture/Horticulture</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Optional</h3>
+              <ul>
+                <li>Tailoring</li>
+                <li>Embroidery</li>
+                <li>Electrical skills</li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </motion.div>
 
-        <section className="Rhsacademic-excellence-section">
-          <h2>Academic Excellence</h2>
-          <p>
-            We believe in providing the best possible education to all our students. The BCT Residential Model High School
-            focuses on comprehensive learning that meets the educational needs of rural areas.
-          </p>
+        <motion.div 
+          className="feature-box social"
+          whileHover={{ y: -10 }}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <FaLightbulb className="feature-icon" />
+          <h2>Social Animation</h2>
+          <ul>
+            <li>Village interaction programs</li>
+            <li>Folk dance training</li>
+            <li>Street play performances</li>
+            <li>Cultural events participation</li>
+          </ul>
+        </motion.div>
+      </div>
 
-          <div className="card-containersRhs">
-            {academicData.map((item, index) => (
-              <div className="info-cardRhs" key={index}>
-                <div className="iconRhs">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+      {/* Infrastructure Section */}
+      <div className="infrastructure-section">
+        <h2><FaBuilding /> Infrastructure</h2>
+        <div className="infra-grid">
+          <motion.div className="infra-card" whileHover={{ scale: 1.05 }}>
+            <FaBuilding className="infra-icon" />
+            <h3>Hostel</h3>
+            <p>Separate facilities for boys and girls with bunk beds and study tables</p>
+          </motion.div>
+          <motion.div className="infra-card" whileHover={{ scale: 1.05 }}>
+            <FaBook className="infra-icon" />
+            <h3>Library</h3>
+            <p>4000+ books in Telugu, English, and Hindi languages</p>
+          </motion.div>
+          <motion.div className="infra-card" whileHover={{ scale: 1.05 }}>
+            <FaDesktop className="infra-icon" />
+            <h3>Computer Lab</h3>
+            <p>Modern lab for computer education and skill development</p>
+          </motion.div>
+          <motion.div className="infra-card" whileHover={{ scale: 1.05 }}>
+            <FaUtensils className="infra-icon" />
+            <h3>Mess</h3>
+            <p>Large mess with fresh food and balanced weekly menu</p>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Recent Events */}
+      <div className="events-section">
+        <h2>Recent Events</h2>
+        <div className="events-timeline">
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <FaBus className="timeline-icon" />
+              <h3>School Picnic</h3>
+              <p className="date">February 2022</p>
+              <p>Visit to Visakhapatnam zoo and Navy Day Parade</p>
+            </div>
           </div>
-        </section>
-
-        <section className="skills-training-section">
-          <h2>Core Skills</h2>
-          <div className="skills-container">
-            {coreSkills.map((item, index) => (
-              <div className="skill-card" key={index}>
-                <div className="icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <FaPalette className="timeline-icon" />
+              <h3>Sankranti Celebrations</h3>
+              <p className="date">January 2022</p>
+              <p>Rangoli competition with expert judging</p>
+            </div>
           </div>
-
-          <h2>Optional Skills</h2>
-          <div className="skills-container">
-            {optionalSkills.map((item, index) => (
-              <div className="skill-card" key={index}>
-                <div className="icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <FaLightbulb className="timeline-icon" />
+              <h3>Career Guidance</h3>
+              <p>Program for classes 9 and 10</p>
+            </div>
           </div>
-        </section>
-
-        {/* <button className="ETcta-button">Contact Us Now</button> */}
-      </main>
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <FaStethoscope className="timeline-icon" />
+              <h3>Medical Camp</h3>
+              <p className="date">February 14-15</p>
+              <p>Health check and blood group testing</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default RhSchools;

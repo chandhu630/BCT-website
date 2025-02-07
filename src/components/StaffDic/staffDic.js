@@ -89,7 +89,7 @@ const StaffDirectory = () => {
       },
       {
         name: "KV Ganesh",
-        position: "Tailoring Skills Instructor",
+        position: "Electrical Skills Instructor",
         description: "A stitch in time can be a lifeline. Tailoring the education of many children that include the physically challenged, D Ramakrishna imparts a necessary skill, that can create an earning opportunity for his students.",
         image: "/imgs/teachers/ganesh.png",
         video: "https://www.youtube.com/watch?v=OGKUrSJPxVc"
@@ -109,11 +109,11 @@ const StaffDirectory = () => {
       {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-content">
-          <img 
+          {/* <img 
             src="/imgs/bct.png" 
             alt="BCT Logo" 
             className="bct-logo" 
-          />
+          /> */}
           {/* <h1>Our Faculty</h1>
           <p>Dedicated to Rural Education Excellence</p> */}
         </div>

@@ -32,7 +32,7 @@ const Agriculture = () => {
     {
       title: "Animal Husbandry",
       description: "​​​In house veterinary scientists also enable veterinary support by distribution of livestock, conducting sessions on their care and enabling additional income to families through proper management.",
-      image: "/imgs/agri/cows.jpg",
+      image: "/imgs/agri/animals.jpeg",
     },
   ];
 
@@ -117,7 +117,7 @@ const Agriculture = () => {
 
       <section className="about_kvk_section_BctAgri">
         <div className="about_kvk_image_BctAgri">
-          <img src="/imgs/agri/krushi.JPG" alt="About KVK" />
+          <img src="/imgs/krishi.jpeg" alt="About KVK" />
         </div>
         <div className="about_kvk_content_BctAgri">
           <h1>About Krishi Vigyan Kendra</h1>

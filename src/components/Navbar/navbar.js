@@ -105,23 +105,24 @@ const Navbar = () => {
                 ></i>
               </span>
               {showEducationSubMenu && (
-                <ul className="sub-dropdown">
+                <ul className="sub-dropdown" id="sub-dropdown2">
                   <li>
                     <Link
+                      className="residential-school"
                       to="/trust-areas/education/rhs"
                       onClick={handleNavLinkClick}
                     >
                       Residential High School
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       to="/trust-areas/education/tribalEd"
                       onClick={handleNavLinkClick}
                     >
                       Tribal Primary Education
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               )}
             </p>

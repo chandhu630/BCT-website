@@ -126,7 +126,7 @@ const PWDs = () => {
         {/* Card 2: Institution-Based Rehabilitation */}
         <div className="pwd-rehabilitation-card">
           <img
-            src="/imgs/pwds2.png"
+            src="/imgs/speechTherapy.jpeg"
             alt="Institution-Based Rehabilitation"
             className="pwd-rehabilitation-card__image"
           />
@@ -151,7 +151,7 @@ const PWDs = () => {
         {/* Card 3: Physiotherapy Center */}
         <div className="pwd-rehabilitation-card">
           <img
-             src="/imgs/pwds3.png"
+             src="/imgs/maruthianna.png"
             alt="Physiotherapy Services"
             className="pwd-rehabilitation-card__image"
           />

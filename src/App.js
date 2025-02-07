@@ -21,8 +21,9 @@ import Program from "./components/Programs/program";
 import ServiceDetails from "./components/ServiceDetails/servicedetails";
 import BlogDetails from "./components/Blogs/blogcard";
 import BlogPage from "./components/Blogs/blog";
+
 import RhSchools from "./components/ThrustAreas/Education/RhSchools";
-import TribalEd from "./components/ThrustAreas/Education/TribalEd";
+// import TribalEd from "./components/ThrustAreas/Education/TribalEd";
 import ITI from "./components/ThrustAreas/SkillDev/ITI";
 import SmartCenters from "./components/ThrustAreas/SkillDev/SmartCenters";
 import PWDs from "./components/ThrustAreas/PWDs";
@@ -30,6 +31,8 @@ import Agriculture from "./components/ThrustAreas/Agriculture";
 import Community from "./components/ThrustAreas/Community";
 import DesignPage from "./components/ThrustAreas/DesignPage";
 import GPTSidebar from "./components/GPTSidebar/GPTSidebar"; // Import GPT Sidebar
+
+// import PDFViewer from "./components/PDF/PDFViewer";
 import "./App.css"
 
 function App() {
@@ -79,12 +82,13 @@ function App() {
             <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/trust-areas/:trustId" element={<DesignPage data={thrustAreaData} />} />
             <Route path="/trust-areas/education/rhs" element={<RhSchools />} />
-            <Route path="/trust-areas/education/tribalEd" element={<TribalEd />} />
+            {/* <Route path="/trust-areas/education/tribalEd" element={<TribalEd />} /> */}
             <Route path="/trust-areas/skill-dev/Iti" element={<ITI />} />
             <Route path="/trust-areas/skill-dev/smart-centers" element={<SmartCenters />} />
             <Route path="/trust-areas/pwds" element={<PWDs />} />
             <Route path="/trust-areas/agri" element={<Agriculture />} />
             <Route path="/trust-areas/community" element={<Community />} />
+            {/* <Route path="/newsletter" element={<PDFViewer />}/> */}
           </Routes>
 
           {/* Conditionally render the footer */}
