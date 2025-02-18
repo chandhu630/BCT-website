@@ -164,14 +164,14 @@ const RhSchools = () => {
               <p>Program for classes 9 and 10</p>
             </div>
           </div>
-          <div className="timeline-item">
+          {/* <div className="timeline-item">
             <div className="timeline-content">
               <FaStethoscope className="timeline-icon" />
               <h3>Medical Camp</h3>
               <p className="date">February 14-15</p>
               <p>Health check and blood group testing</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

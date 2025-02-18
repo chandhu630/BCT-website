@@ -32,7 +32,7 @@ const Agriculture = () => {
     {
       title: "Animal Husbandry",
       description: "​​​In house veterinary scientists also enable veterinary support by distribution of livestock, conducting sessions on their care and enabling additional income to families through proper management.",
-      image: "/imgs/agri/animals.jpeg",
+      image: "/imgs/animalhusbandary.jpeg",
     },
   ];
 

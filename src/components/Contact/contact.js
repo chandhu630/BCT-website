@@ -68,7 +68,7 @@ const ContactUs = () => {
           <i style={{fontSize:"30px",borderRadius:"50%",padding:"15px"}} className="fas fa-phone-alt"></i>
           <h3>Phone Number</h3>
           <p>
-            <a className="phoneNumber" href="tel:+918500359819">+91 8500359819</a>
+            <a className="phoneNumber" href="tel:+918500359819">+91 9247269745</a>
           </p>
         </div>
 

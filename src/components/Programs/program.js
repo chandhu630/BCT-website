@@ -6,8 +6,14 @@ import {
   RehabilitationIcon,
   AgricultureIcon, 
   CommunityIcon,
-  Health,
+  SLFCIcon,
 } from '../Remaning/icons';
+
+// Correct imports from specific react-icons libraries
+import { FaSeedling, FaHandsHoldingChild, FaHandHoldingMedical, FaPeopleCarry } from 'react-icons/fa';
+import { GiGrainBundle, GiSprout } from 'react-icons/gi';
+import { MdOutlineVolunteerActivism, MdDiversity3 } from 'react-icons/md';
+
 import './program.css';
 
 const Program = () => {
@@ -45,12 +51,12 @@ const Program = () => {
       subOptions: [
         {
           title: "SMART Centers",
-          path: "/trust-areas/skill-dev/Iti",
+          path: "/trust-areas/skill-dev/smart-centers",
           description: "Skill Development Centers"
         },
         {
           title: "ITI",
-          path: "/trust-areas/skill-dev/smart-centers",
+          path: "/trust-areas/skill-dev/Iti",
           description: "Industrial Training Institute"
         }
       ]
@@ -79,13 +85,21 @@ const Program = () => {
       borderColor: "#8A2BE2",
       path: "/trust-areas/community"
     },
+    // {
+    //   id: 6,
+    //   icon: < SLFCIcon />,
+    //   title: "SLFC",
+    //   description: "Sustainable Livelihoods for Farmers and the Challenged (SLFC)",
+    //   borderColor: "#8A2BE2",
+    //   path: "/slfcreport"
+    // }
     {
       id: 6,
-      icon: <Health />,
-      title: "Health",
-      description: "Health camps, awareness support and community well-being.",
+      icon: <FaSeedling />,
+      title: "SLFC",
+      description: "Sustainable Livelihoods for Farmers and the Challenged (SLFC)",
       borderColor: "#8A2BE2",
-      path: "/trust-areas/health"
+      path: "/slfcreport"
     }
   ];
 

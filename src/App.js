@@ -33,6 +33,8 @@ import DesignPage from "./components/ThrustAreas/DesignPage";
 import GPTSidebar from "./components/GPTSidebar/GPTSidebar"; // Import GPT Sidebar
 
 import NewsletterPage from "./NewsletterPage";
+
+import SLFCReport from "./components/SLFC/SLFCReport";
 import "./App.css"
 
 function App() {
@@ -89,6 +91,7 @@ function App() {
             <Route path="/trust-areas/agri" element={<Agriculture />} />
             <Route path="/trust-areas/community" element={<Community />} />
             <Route path="/newsletter" element={<NewsletterPage />}/>
+            <Route path="/slfcreport" element={<SLFCReport />}/>
           </Routes>
 
           {/* Conditionally render the footer */}

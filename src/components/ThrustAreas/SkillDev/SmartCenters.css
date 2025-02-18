@@ -79,7 +79,7 @@
 
 .itprograms_smart {
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  /* flex-wrap: wrap; */
   padding: 20px;
   justify-content: center;
   gap: 20px;
@@ -127,6 +127,7 @@
   border-radius: 8px;
   font-size: 18px;
   color: white;
+  text-decoration: none;
 }
 
 /* Responsive Design */

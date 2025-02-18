@@ -57,3 +57,20 @@ export const CommunityIcon = () => (
     <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
   </svg>
 );
+
+export const SLFCIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    width="24" 
+    height="24"
+  >
+    {/* Plant/Farming element */}
+    <path d="M12 2L4.5 9.5C3.5 10.5 3 11.8 3 13.2C3 16.4 5.6 19 8.8 19C10.2 19 11.5 18.5 12.5 17.5L20 10" />
+    {/* Helping hand element */}
+    <path d="M12 6.5C9.2 6.5 7 8.7 7 11.5C7 14.3 9.2 16.5 12 16.5C14.8 16.5 17 14.3 17 11.5C17 8.7 14.8 6.5 12 6.5Z" />
+    {/* Person element */}
+    <circle cx="12" cy="11.5" r="2.5" />
+  </svg>
+);

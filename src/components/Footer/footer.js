@@ -94,11 +94,11 @@ const Footer = () => {
             <FontAwesomeIcon icon={faPhone} className="icon" /> 
             <a 
               className='ContactDetailsColor' 
-              href='Tel:+91 8500359819'
+              href='Tel:+91 9247269745'
               target="_blank"
               rel="noopener noreferrer"
             >
-              +91 8500359819
+              +91 9247269745
             </a>
           </p>
         </div>
@@ -109,6 +109,7 @@ const Footer = () => {
           <div>
             <Link to ="/newsletter" className='newsletter-footer'>Newsletter</Link>
           </div>
+          
           <p>Subscribe to our newsletter for updates and news.</p>
             <button
              onClick={handleYouTubeSubscribe}

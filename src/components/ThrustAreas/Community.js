@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Community.css";
 
 const Community = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const animateCounters = (entries, observer) => {
       entries.forEach((entry) => {
@@ -42,6 +44,10 @@ const Community = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  // const handleHealthCampClick = () => {
+  //   navigate('/slfcreport');
+  // };
 
   return (
     <div className="homepage_com">
@@ -110,9 +116,13 @@ const Community = () => {
             <h3 style={{color:" #147169"}}>Farmers Clubs</h3>
             <p>Monthly meetings provide a platform for farmers to discuss challenges, explore cost-effective inputs, adopt organic farming, and enhance incomes.</p>
           </div>
-          <div className="program-item">
-          <div className="program-icon">🏥</div>
-          <h3 style={{color:" #147169"}}>Health Camps</h3>
+          <div 
+            className="program-item" 
+            // onClick={handleHealthCampClick}
+            // style={{ cursor: 'pointer' }}
+          >
+            <div className="program-icon">🏥</div>
+            <h3 style={{color:" #147169"}}>Health Camps</h3>
             <p>Regular camps, such as eye and COVID-19 screenings, raise health awareness. Masks, sanitizers, and medical equipment were distributed during the pandemic.</p>
           </div>
           <div className="program-item">
