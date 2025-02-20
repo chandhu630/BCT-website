@@ -1,0 +1,277 @@
+/* .about-us-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px; 
+}
+
+.text-content {
+  max-width: 600px;
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #15926a; 
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.learn-more {
+  background-color: #c64848;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.timelinecolor
+{
+  color:#c64848;
+  border: 2px solid #15926a;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.timelinecolor:hover
+{
+  border: 2px solid #c64848;
+}
+
+.learn-more:hover {
+  background-color: #15926a;
+}
+
+.illustration {
+  max-width: 500px;
+  flex: 1;
+  text-align: center;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.mission-card {
+  background-color: #f0f8ff; 
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex: 1 0 calc(50% - 20px); 
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mission-card {
+    flex: 1 0 100%; 
+  }
+
+  .illustration {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    padding: 10px;
+  }
+
+  .text-content {
+    padding: 5px;
+  }
+
+  .learn-more {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+.flexButtons
+{
+  display: flex;
+  gap: 20px;
+}
+.linknone
+{
+  text-decoration: none;
+  color: black;
+} */
+
+.about-us-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px; 
+}
+
+.text-content {
+  max-width: 600px;
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #15926a; 
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.learn-more {
+  background-color: #15926a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.timelinecolor
+{
+  color:#c64848;
+  border: 2px solid #c64848;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.timelinecolor:hover
+{
+  border: 2px solid #15926a;
+}
+
+.learn-more:hover {
+  background-color: #c64848;
+}
+
+.illustration {
+  max-width: 500px;
+  flex: 1;
+  text-align: center;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Adds consistent spacing between cards */
+}
+
+.mission-card {
+  background-color: #f0f8ff; /* Light blue */
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex: 1 0 calc(50% - 20px); /* Adjust width for 2 cards in a row with gap */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mission-card {
+    flex: 1 0 100%; /* Full width on smaller screens */
+  }
+
+  .illustration {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    padding: 10px;
+  }
+
+  .text-content {
+    padding: 5px;
+  }
+
+  .learn-more {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+.flexButtons
+{
+  display: flex;
+  gap: 20px;
+}
+.linknone
+{
+  text-decoration: none;
+  color: black;
+}
