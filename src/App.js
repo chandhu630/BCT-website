@@ -38,7 +38,7 @@ import SLFCReport from "./components/SLFC/SLFCReport";
 import "./App.css"
 
 function App() {
-  const [isGPTVisible, setIsGPTVisible] = useState(false); // State for GPT Sidebar visibility
+  const [isGPTVisible, setIsGPTVisible] = useState(false); 
 
   const thrustAreaData = {
     trust1: { title: "Trust Area 1" },
