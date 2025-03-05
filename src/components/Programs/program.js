@@ -7,6 +7,7 @@ import {
   AgricultureIcon, 
   CommunityIcon,
   SLFCIcon,
+  SupportIcon
 } from '../Remaning/icons';
 
 // Correct imports from specific react-icons libraries
@@ -71,11 +72,31 @@ const Program = () => {
     },
     {
       id: 4,
-      icon: <AgricultureIcon />,
+      icon: <FaSeedling />,
       title: "Agriculture",
       description: "Sustainable farming practices and agricultural development.",
+      // borderColor: "#EC4342",
+      // path: "/trust-areas/agri"
+
       borderColor: "#EC4342",
-      path: "/trust-areas/agri"
+      hasSubOptions: true,
+      subOptions: [
+        {
+          title: "KVK",
+          path: "/trust-areas/agri",
+          description: "Works towards enhancing agricultural outcomes for farmers."
+        },
+        {
+          title: "SLFC",
+          path: "/slfcreport",
+          description: "Sustainable Livelihoods for Farmers and the Challenged"
+        }
+      ]
+
+
+
+
+
     },
     {
       id: 5,
@@ -95,11 +116,11 @@ const Program = () => {
     // }
     {
       id: 6,
-      icon: <FaSeedling />,
-      title: "SLFC",
-      description: "Sustainable Livelihoods for Farmers and the Challenged (SLFC)",
+      icon: <SupportIcon />,
+      title: "Support",
+      description: "Providing strength and hope through unwavering support.",
       borderColor: "#EC4342",
-      path: "/slfcreport"
+      path: "/Support"
     }
   ];
 

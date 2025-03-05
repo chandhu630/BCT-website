@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showTrustDropdown, setShowTrustDropdown] = useState(false);
   const [showEducationSubMenu, setShowEducationSubMenu] = useState(false);
   const [showSkillDevSubMenu, setShowSkillDevSubMenu] = useState(false);
-  const [showAgriMenu, setShowAgribMenu] = useState(false);
+  const [showAgriMenu, setShowAgriMenu] = useState(false);
 
 
   const closeAllDropdowns = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
     setShowTrustDropdown(false);
     setShowEducationSubMenu(false);
     setShowSkillDevSubMenu(false);
-    setShowAgribMenu(false)
+    setShowAgriMenu(false)
 
   };
 
@@ -169,38 +169,31 @@ const Navbar = () => {
             <p
               onClick={(e) => {
                 e.stopPropagation();
-                setShowSkillDevSubMenu(!showSkillDevSubMenu);
+                setShowAgriMenu(!showAgriMenu);
                 setShowEducationSubMenu(false);
+                setShowSkillDevSubMenu(false);
               }}
             >
               <span>
-              Agriculture{" "}
-                <i
-                  className="fas fa-chevron-right"
-                  style={{ fontSize: "8px" }}
-                ></i>
+                Agriculture{" "}
+                <i className="fas fa-chevron-right" style={{ fontSize: "8px" }}></i>
               </span>
-              {showSkillDevSubMenu && (
-                <ul className="sub-dropdown topDown" id="sub-dropdown1">
+              {showAgriMenu && (
+                <ul className="sub-dropdown topDown sub-dropdown3" id="sub-dropdown3">
                   <li>
-                    <Link
-                      to="/trust-areas/agri"
-                      onClick={handleNavLinkClick}
-                    >
+                    <Link to="/trust-areas/agri" onClick={handleNavLinkClick}>
                       KVK
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/slfcreport"
-                      onClick={handleNavLinkClick}
-                    >
+                    <Link to="/slfcreport" onClick={handleNavLinkClick}>
                       SLFC
                     </Link>
                   </li>
                 </ul>
               )}
             </p>
+
 
 
 

@@ -2,21 +2,26 @@
   background-color: #f2f1e2;
 }
 
-/* Hero Section */
-/* .hero-section_agricul_com{
-  position: relative;
-  background-image: url('/public/imgs/agri/ram.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  height: 60vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  text-align: center;
-  filter:brightness(1.2);
-} */
+@media(min-width:768px ) and (max-width:1024px) {
+  .hero-section_agricul_com {
+   width: 100%;
+   height: 70vh;
+  }
+  .about_kvk_image_Com
+
+  {
+    width: 50%;
+  }
+  .gap_com
+  {
+    margin-bottom: 30px;
+  }
+  
+}
+.gap_com
+{
+  margin-bottom: 30px;
+}
 .hero-section_agricul_com{
   position: relative;
   background-image: url('/public/imgs/agri/ram.jpeg');  /* Replace with your image path */
@@ -144,7 +149,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* .hero-section_agri {
     height: 80vh;
   }

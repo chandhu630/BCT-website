@@ -163,6 +163,10 @@
   .contact-header h1 {
     font-size: 2rem;
   }
+  .contact-form
+  {
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -185,8 +189,25 @@
 .contact-info a:hover {
   color: #c64848; 
 }
+.form-input ,
+.form-textarea {
+  width: 96%;
+  /* border: 2px solid red; */
+}
 
 
 .social-icon:hover {
   color: #15926a; /* Orange color on hover */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-input ,
+  .form-textarea {
+    width: 96%;
+    /* border: 2px solid red; */
+  }
+  .contact-form
+  {
+    padding-left:25px;
+  }
+  
 }

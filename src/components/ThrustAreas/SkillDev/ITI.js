@@ -43,7 +43,7 @@ function ITI(){
             </Link>
           </div>
         </div>
-        <div className='ITGallery'style={{marginTop:"30px", marginBottom:"30px"}} >
+        <div className='ITGallery' style={{marginTop:"30px", marginBottom:"30px"}} >
           <h1 style={{textAlign:"center"}}>Training programs</h1>
           <div className='itprograms'>
             <div className='ITDiv'><img className='ItPro_img'  src='/smartiti/ramshit.jpg' alt='' /></div>

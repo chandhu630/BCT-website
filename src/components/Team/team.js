@@ -43,22 +43,32 @@ const additionalMembers = [
   {
     category: 'Board Members',
     names: [
-      'Sri B. Radhakrishna',
-      'Smt Senapati Kasulamma',
-      'Sri Nagaraja Prakasam',
-      'Smt Perin Devi',
+      'Ms. K V Rama',
+      'Sri Srinivas Prasad',
+      'Sri Pudipeddi Hari',
       'Sri Basant Mohanty',
-      'Smt Shilpa Dantu',
-      'Sri D. Nagabrahmam',
-      'Smt G. Nookaratnam',
-      'Prof. Suresh Bhagavatula',
-      'Sri Sriram Nadiminti',
+      'Dr.Y Lakshmi Prabha',
+      'Prof. B Suresh',
+      'Smt Dwarapureddi Syamala',
+      'Ms. Lata Gullapalli',
+      'Sri Poludas Satish',
+      'Smt Boddeda Nagamani',
+      'Sri Sarisa Srinivasarao'
     ],
   },
+
   {
-    category: 'Additional Members',
-    names: ['Smt K. Prabhavathi', 'Dr. Sailaja Kurra', 'Sri​ V. Subrahmanayam'],
+    category: 'Village Advisory Members',
+    names: [
+      'Sri Senapathi Nageswara Rao',
+      'Sri Pothu Ranga Rao',
+      'Sri Dwarapureddy Apparao',
+      'Bantu Ramu',
+      'Kundrapu Aruna',
+      'Senapati Bhulakshmi',
+    ],
   },
+  
   {
     category: 'Advisory Members',
     names: [
@@ -69,16 +79,10 @@ const additionalMembers = [
     ],
   },
   {
-    category: 'Village Advisory Members',
-    names: [
-      'Sri Senapathi Nageswara Rao',
-      'Sri Pothu Ranga Rao',
-      'Sri Pragada Venkatarao',
-      'Smt Vepakayala Satyavathi',
-      'Smt Bheesetti Devi',
-      'Smt Nalamari Ramu',
-    ],
+    category: 'Additional Members',
+    names: ['Smt K. Prabhavathi', 'Dr. Sailaja Kurra', 'Sri Shaik Meera'],
   },
+  
 ];
 
 const MeetOurTeam = () => {
@@ -142,7 +146,7 @@ const MeetOurTeam = () => {
         <div className="members-section">
           <div className="section-title">
             <div className="red-accent"></div>
-            <h2>Additional Members</h2>
+            <h2>Village Advisory Members</h2>
           </div>
           <div className="members-grid">
             {additionalMembers[1].names.map((name, idx) => (
@@ -172,7 +176,7 @@ const MeetOurTeam = () => {
         <div className="members-section">
           <div className="section-title">
             <div className="red-accent"></div>
-            <h2>Village Advisory Members</h2>
+            <h2>Additional Members</h2>          
           </div>
           <div className="members-grid">
             {additionalMembers[3].names.map((name, idx) => (

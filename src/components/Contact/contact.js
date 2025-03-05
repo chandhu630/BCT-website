@@ -15,7 +15,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const scriptURL = "https://script.google.com/macros/s/AKfycbz35ibTt-Kr6705DmukBdSRNHsxdcfapMjdyjEPcQoW7kQx1HC20fgf9X06aqGII4l8_Q/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxftw1h3a2LIG-knbtOAdERbw7bM9fDo5mNdpiEVNbOF1E6TXfXks24baJo3otXQy2o/exec";
   
     try {
       const response = await fetch(scriptURL, {
@@ -59,7 +59,7 @@ const ContactUs = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Bhagavatula Charitable Trust, Haripuram, Visakhapatnam – 531061
+              Bhagavatula Charitable Trust, Haripuram, Anakapalle – 531061
             </a>
           </p>
         </div>
@@ -136,10 +136,6 @@ const ContactUs = () => {
           </div>
         </div>
         
-        
-
-
-        {/* ////////////////////////// */}
         <div className="contact-form">
           <h2>Get in Touch</h2>
           <form onSubmit={handleSubmit}>

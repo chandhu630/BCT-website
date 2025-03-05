@@ -132,6 +132,65 @@
   text-decoration: none;
   /* margin-top: 40px; */
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* Adjust header layout */
+  .ITIHeaderFlex {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .ITI_Div_Left {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  /* Adjust About ITI Section */
+  .AboutIt {
+    flex-direction: column; /* Stack items */
+    text-align: center;
+  }
+
+  .ItImage, .AboutContent {
+    max-width:80%; /* Reduce width for better fit */
+    margin: auto;
+  }
+
+  .realItimage {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust IT Gallery */
+  .ITGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itprograms, .itprograms2 {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .ITDiv, .ITDivContent {
+    /* flex: 1 1 80%; */
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .ITDiv img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust buttons and links */
+  .ItSupport {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -303,16 +303,13 @@
   }
 }
 
-/* @media (max-width: 480px) {
-  .section-header h2 {
-    font-size: 20px;
+@media(min-width:768px ) and (max-width:1024px) {
+  .team-section {
+    width: 90%;
+    text-align: center;
   }
-
-  .member-card {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
-} */
+  
+}
 
 @media (max-width: 480px) {
   .team-image-container {

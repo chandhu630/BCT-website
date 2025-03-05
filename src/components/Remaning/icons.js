@@ -57,6 +57,14 @@ export const CommunityIcon = () => (
     <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
   </svg>
 );
+export const SupportIcon = () => (
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M18 20h-3a1 1 0 0 1-1-1v-2a6 6 0 0 1 6-6h2v2a6 6 0 0 1-6 6z" />
+    <path d="M6 20h3a1 1 0 0 0 1-1v-2a6 6 0 0 0-6-6H2v2a6 6 0 0 0 6 6z" />
+    <circle cx="12" cy="10" r="4" />
+  </svg>
+);
+
 
 export const SLFCIcon = () => (
   <svg 

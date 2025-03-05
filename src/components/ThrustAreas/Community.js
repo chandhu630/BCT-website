@@ -55,7 +55,7 @@ const Community = () => {
         <div className="hero-overlay_com"></div>
         <div className="hero-content_agri_com">
           <h1>Community Organisation</h1>
-          <p>Building self-sustaining villages through Community Action Groups (CAGs)</p>
+          <p className="gap_com">Building self-sustaining villages through Community Action Groups (CAGs)</p>
           
           <div className="hero-buttons-com">
           <Link 

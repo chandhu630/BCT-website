@@ -210,3 +210,21 @@
       font-size: 0.7em;
     }
   }
+
+
+  @media (max-width:1184px) {
+   .features-container
+   {
+    width: 90%;
+   }
+   .ProgramsPage 
+   {
+    width: 90%;
+    margin: auto;
+   }
+   .feature-cards
+   {
+    width: 250px;
+   }
+    
+  }

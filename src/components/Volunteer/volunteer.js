@@ -26,7 +26,7 @@ const VolunteersForm = () => {
     e.preventDefault();
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbydKRt0VuE41hc6lWFIFkP67VsxvM-ZocQ_2GBypDfP_epDWAjOX1vCg-ZCuSCsVYIf/exec";
+      "https://script.google.com/macros/s/AKfycbx9vGVZXhA76SdVnr8j7n_2PrWGSvemHGIA4MVEO_aEx2c1mrMp_Jmnpsmy8fK7P-rB/exec";
 
     try {
       await fetch(scriptURL, {
@@ -96,31 +96,7 @@ const VolunteersForm = () => {
           </div>
           
         </div>
-        {/* <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="startDate">Start Date</label>
-            <input
-              type="date"
-              id="startDate"
-              name="startDate"
-              value={formData.startDate}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="weeks">Number of Weeks</label>
-            <input
-              type="number"
-              id="weeks"
-              name="weeks"
-              value={formData.weeks}
-              onChange={handleChange}
-              placeholder="Enter number of weeks"
-              required
-            />
-          </div>
-        </div> */}
+       
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="phone">Phone</label>

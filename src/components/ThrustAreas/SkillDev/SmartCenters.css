@@ -153,3 +153,98 @@
       flex: 1 1 100%; /* Full width for each item */
   }
 }
+
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+  .ITIHeaderFlex_smart {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+      min-height: 50vh; /* Reduce height for tablets */
+      padding: 15px;
+  }
+
+  .ITI_Div_Left_smart {
+      width: 100%;
+      text-align: center;
+  }
+
+  .AboutIt_smart {
+      flex-direction: row; /* Keep side-by-side */
+      align-items: center;
+      justify-content: center;
+  }
+
+  .ItImage_smart {
+      flex: 1;
+      max-width: 75%; /* Adjust size */
+  }
+
+  .AboutContent_smart {
+      flex: 1;
+      max-width: 45%;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .ListIT_smart {
+      font-size: 16px; /* Adjust text size */
+  }
+
+  .ItSupport_smart {
+      font-size: 16px;
+      padding: 8px 12px;
+  }
+.ITGallery_smart
+{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.ITGallery_smart {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  width: 90%;
+  padding: 20px;
+}
+
+.itprograms_smart {
+  display: flex;
+  flex-direction: column; /* Stack items one below the other */
+  align-items: center; /* Center items */
+  width: 100%;
+  gap: 30px; /* Add space between elements */
+}
+
+.ITDiv_smart, .ITDivContent_smart {
+  width: 100%; /* Reduce width for better alignment */
+  text-align: center;
+}
+
+.ITDiv_smart img {
+  width: 100%;
+  height:300px;
+  border-radius: 10px;
+}
+
+.ITDivContent_smart {
+  background-color: #F2F1E2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ListIT_smart {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+.realItimage_smart
+{
+  height: 300px;
+  object-fit: cover;
+}
+
+}
+
