@@ -153,6 +153,14 @@
       flex: 1 1 100%; /* Full width for each item */
   }
 }
+@media (max-width:560px) {
+  .itprograms_smart {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
 
 
  @media (min-width: 768px) and (max-width: 1024px) {
@@ -247,4 +255,20 @@
 }
 
 }
+@media (min-width:1024px) {
+  .itprograms_smart {
+    flex-direction: row;
+    align-items: center;
+  }
 
+  .ITDiv_smart, .ITDivContent_smart {
+    flex: 1;
+    /* margin: 10px; */
+    /* border: 2px solid red; */
+  }
+
+  .ItPro_img_smart {
+    width: 100%;
+    height:300px;
+  } 
+}

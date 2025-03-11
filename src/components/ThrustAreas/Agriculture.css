@@ -2,7 +2,6 @@
 .homepage_BctAgri {
   background-color: #f2f1e2;
 }
-
 /* Hero Section */
 .hero-section_agricul_BctAgri {
   position: relative;
@@ -19,6 +18,22 @@
   filter: brightness(1.2);
 }
 
+
+@media(max-height: 600px) {
+  .hero-section_agricul_BctAgri {
+    height: 100vh;
+    
+  }
+ 
+}
+@media(max-height: 900px)  {
+  .hero-section_agricul_BctAgri {
+    height: 100vh;
+  }
+
+ 
+}
+
 .hero-overlay_BctAgri {
   position: absolute;
   top: 0;
@@ -28,7 +43,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
 .hero-content_agri_BctAgri {
   position: relative;
   z-index: 2;
@@ -315,10 +329,6 @@
     color: white;
   }
 }
-
-
-
-
 
 @media(min-width:768px ) and (max-width:1024px) {
   .hero-section_agricul_BctAgri {

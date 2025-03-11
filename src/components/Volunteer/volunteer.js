@@ -113,13 +113,14 @@ const VolunteersForm = () => {
           <div className="form-group">
             <label htmlFor="area">Interested Area</label>
             <select
+              className="selectAreaOption"
               id="area"
               name="area"
               value={formData.area}
               onChange={handleChange}
               required
             >
-              <option value="">Select an area</option>
+              <option className="selectOption" value="">Select an area</option>
               <option value="Residential High School">Residential High School</option>
               <option value="Agriculture">Agriculture</option>
               <option value="Community Development">Community Development</option>

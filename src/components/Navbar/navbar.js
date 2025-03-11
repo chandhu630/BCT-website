@@ -193,10 +193,6 @@ const Navbar = () => {
                 </ul>
               )}
             </p>
-
-
-
-
             <p>
               <Link to="/trust-areas/pwds" onClick={handleNavLinkClick}>
                 Rehab of PWDs

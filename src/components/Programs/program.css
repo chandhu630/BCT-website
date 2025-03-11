@@ -68,39 +68,45 @@
   @media (max-width: 1024px) {
     .features-grids {
       grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-      gap: 1.5rem;
+      gap: 2.5rem;
     }
   
     .feature-cards {
-      width: 100%; /* Adjust card width for smaller screens */
+      width: 90%; 
+      gap: 20px;
     }
   }
   
   /* Mobile View */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .features-grids {
+      display: grid;
       grid-template-columns: 1fr; 
       padding: 2rem;
       gap: 1rem;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
     }
   
     .features-container {
       padding: 2rem; 
-      margin-left: -50px;
+      margin-left: -35px;
       margin-top: -30px;
     }
   
-    .feature-cards {
-      width: 100%; /* Full width for cards on mobile */
-      padding: 1rem; /* Adjust padding for smaller screens */
+    .feature-cards
+    {
+     width:100%;
+     margin: auto;
     }
   
     .feature-title {
-      font-size: 1.1rem; /* Slightly smaller text for mobile */
+      font-size: 1.1rem; 
     }
   
     .feature-description {
-      font-size: 0.9rem; /* Slightly smaller description text for mobile */
+      font-size: 0.9rem; 
     }
   }
 
@@ -209,6 +215,11 @@
     .bubble-option p {
       font-size: 0.7em;
     }
+
+    .features-container
+    {
+     width: 100%;
+    }
   }
 
 
@@ -216,15 +227,15 @@
    .features-container
    {
     width: 90%;
+    /* margin-left:30px; */
    }
+
+   
    .ProgramsPage 
    {
-    width: 90%;
+    width: 100%;
     margin: auto;
    }
-   .feature-cards
-   {
-    width: 250px;
-   }
+  
     
   }
