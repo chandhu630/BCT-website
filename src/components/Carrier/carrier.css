@@ -1,0 +1,132 @@
+/* Careers.css */
+
+.careers-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .careers-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .careers-header h1 {
+    font-size: 2.2rem;
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .careers-header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .job-opening,
+  .application-guidelines,
+  .contact-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .job-opening h2,
+  .application-guidelines h2,
+  .contact-info h2 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 15px;
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+  }
+  
+  .highlight {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  .job-details h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .job-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .job-details li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .job-details strong {
+    color: #333;
+  }
+  
+  .application-guidelines ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+  }
+  
+  .application-guidelines li {
+    margin: 5px 0;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .contact-info .icon {
+    margin-right: 10px;
+
+    color: green;
+  }
+  
+  .contact-info a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  a {
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .careers-container {
+      padding: 15px;
+    }
+  
+    .careers-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .careers-header p {
+      font-size: 1rem;
+    }
+  
+    .job-opening h2,
+    .application-guidelines h2,
+    .contact-info h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
