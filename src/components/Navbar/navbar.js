@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link to="/about" className="about" id="AboutNav" style={{color:"black"}} onClick={handleNavLinkClick}>
               About
             </Link>
-            <i className="fas fa-chevron-down" style={{ fontSize: "8px" }}></i>
+            <i className="fas fa-chevron-down" ></i>
           </span>
           <div className={`dropdown-menu ${showAboutDropdown ? "show" : ""}`}>
             <p>
@@ -91,7 +91,7 @@ const Navbar = () => {
             }}
           >
             Thrust Areas{" "}
-            <i className="fas fa-chevron-down" style={{ fontSize: "8px" }}></i>
+            <i className="fas fa-chevron-down" ></i>
           </span>
           <div className={`dropdown-menu ${showTrustDropdown ? "show" : ""}`}>
             <p
@@ -119,14 +119,7 @@ const Navbar = () => {
                       Residential High School
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link
-                      to="/trust-areas/education/tribalEd"
-                      onClick={handleNavLinkClick}
-                    >
-                      Tribal Primary Education
-                    </Link>
-                  </li> */}
+                 
                 </ul>
               )}
             </p>

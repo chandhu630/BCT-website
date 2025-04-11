@@ -15,7 +15,7 @@ const RhSchools = () => {
       {/* Banner Section */}
       <div className="rhs-banner" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/rhsbuilding.png)` }}>
         <div className="banner-overlay">
-          <h1>Residential Hign School</h1>
+          <h1>Residential High School</h1>
           <div className="banner-content">
             <p>
               Rural India needs an education system that specifically answers its needs and fills its shortcomings. 
@@ -76,7 +76,7 @@ const RhSchools = () => {
           <h2>Skill Education</h2>
           <div className="skills-grid">
             <div>
-              <h3>Mandatory</h3>
+              <h3>Common</h3>
               <ul>
                 <li>Charkha spinning</li>
                 <li>Agriculture/Horticulture</li>
@@ -141,12 +141,12 @@ const RhSchools = () => {
       <div className="events-section">
         <h2>Recent Events</h2>
         <div className="events-timeline">
-          <div className="timeline-item">
+
+        <div className="timeline-item">
             <div className="timeline-content">
-              <FaBus className="timeline-icon" />
-              <h3>School Picnic</h3>
-              <p className="date">February 2022</p>
-              <p>Visit to Visakhapatnam zoo and Navy Day Parade</p>
+              <FaLightbulb className="timeline-icon" />
+              <h3>Career Guidance</h3>
+              <p>Program for classes 9 and 10</p>
             </div>
           </div>
           <div className="timeline-item">
@@ -159,11 +159,13 @@ const RhSchools = () => {
           </div>
           <div className="timeline-item">
             <div className="timeline-content">
-              <FaLightbulb className="timeline-icon" />
-              <h3>Career Guidance</h3>
-              <p>Program for classes 9 and 10</p>
+              <FaBus className="timeline-icon" />
+              <h3>School Picnic</h3>
+              <p className="date">February 2022</p>
+              <p>Visit to Visakhapatnam zoo and Navy Day Parade</p>
             </div>
           </div>
+         
           {/* <div className="timeline-item">
             <div className="timeline-content">
               <FaStethoscope className="timeline-icon" />

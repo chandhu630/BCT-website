@@ -19,13 +19,23 @@ const Footer = () => {
         {/* NGO Name Section */}
         <div className="footer-section">
           <img src='https://www.bctindia.org/wp-content/uploads/2022/06/bct_logo.png' alt='' />
-          <p className="footer-description">
+          <p className='footer_bright' >
           Making a difference in communities through sustainable development and empowerment initiatives.
           </p>
           <div className="footer-social-icons">
+          <a 
+              href="https://www.facebook.com/bctorg/" 
+              className="social-icons"
+              style={{color:"#1877F2"}}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook"></i>
+            </a>
             <a 
               href="https://x.com/bct_ngo" 
               className="social-icons"
+              style={{color: "rgb(56, 53, 53)"}}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,6 +44,7 @@ const Footer = () => {
             <a 
               href="https://www.instagram.com/bct_india/?hl=en" 
               className="social-icons"
+              style={{color:"#E4405F"}}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,6 +53,7 @@ const Footer = () => {
             <a 
               href="https://www.linkedin.com/company/bctindia/posts/?feedView=all" 
               className="social-icons"
+              style={{color:"#0077B5"}}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -76,7 +88,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Bhagavatula Charitable Trust Eco Rejuvenation Centre Haripuram – 531061 Visakhapatnam district
+              Bhagavatula Charitable Trust Eco Rejuvenation Centre Haripuram – 531061 Anakapalle district
             </a>
           </p>
           <p>
@@ -110,14 +122,14 @@ const Footer = () => {
             <Link to ="/newsletter" className='newsletter-footer'>Newsletter</Link>
           </div>
           
-          <p>Subscribe to our newsletter for updates and news.</p>
+          <p className='footer_bright'>Subscribe to our newsletter for updates and news.</p>
             <button
              onClick={handleYouTubeSubscribe}
               className="newsletter-button">Subscribe</button>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2024 Bhagavatula Charitable Trust. All rights reserved.</p>
+        <p className='footer_bright'>© 2024 Bhagavatula Charitable Trust. All rights reserved.</p>
       </div>
     </footer>
   );

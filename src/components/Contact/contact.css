@@ -148,7 +148,7 @@
 
 .social-icon {
   font-size: 1.5rem;
-  color: #c64848;
+  /* color: #c64848; */
   margin: 0 10px;
   transition: color 0.3s ease;
 }
@@ -187,7 +187,7 @@
 }
 
 .contact-info a:hover {
-  color: #c64848; 
+  /* color: #c64848;  */
 }
 .form-input ,
 .form-textarea {

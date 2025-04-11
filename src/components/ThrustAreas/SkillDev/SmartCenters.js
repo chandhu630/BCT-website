@@ -34,12 +34,12 @@ function SmartCenters(){
              . 
             </p>
 
-            <Link 
+            {/* <Link 
               to="/support-us" 
               className='ItSupport_smart'
             >
               Support Us
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className='ITGallery_smart' style={{marginTop:"30px", marginBottom:"30px"}} >

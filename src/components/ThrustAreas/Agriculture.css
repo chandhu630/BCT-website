@@ -17,21 +17,15 @@
   text-align: center;
   filter: brightness(1.2);
 }
-
-
 @media(max-height: 600px) {
-  .hero-section_agricul_BctAgri {
+  /* .hero-section_agricul_BctAgri {
     height: 100vh;
-    
-  }
- 
+  } */
 }
 @media(max-height: 900px)  {
-  .hero-section_agricul_BctAgri {
+  /* .hero-section_agricul_BctAgri {
     height: 100vh;
-  }
-
- 
+  } */
 }
 
 .hero-overlay_BctAgri {
@@ -99,7 +93,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  width: 100%;
+  /* width: 100%; */
   gap: 2rem;
   margin-top: -2rem;
   z-index: 2;

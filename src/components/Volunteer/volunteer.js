@@ -26,7 +26,7 @@ const VolunteersForm = () => {
     e.preventDefault();
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbx9vGVZXhA76SdVnr8j7n_2PrWGSvemHGIA4MVEO_aEx2c1mrMp_Jmnpsmy8fK7P-rB/exec";
+      "https://script.google.com/macros/s/AKfycbwL0HADJwW9Te5KwoQbt6NcgLMy190DOZIXDJtRpdzhiKE_JzcQllNk1wqBfxfisHo/exec";
 
     try {
       await fetch(scriptURL, {

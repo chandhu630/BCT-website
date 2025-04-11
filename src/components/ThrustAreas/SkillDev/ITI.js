@@ -34,13 +34,13 @@ function ITI(){
             Aspiring to become a leading ITI college, it plans to introduce market-relevant short-term programs. 
             These initiatives aim to attract more girl students, promoting inclusivity.
             </p>
-            <Link 
+            {/* <Link 
               to="/support-us" 
              className='ItSupport'
              
             >
               Support Us
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className='ITGallery' style={{marginTop:"30px", marginBottom:"30px"}} >

@@ -15,7 +15,8 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxftw1h3a2LIG-knbtOAdERbw7bM9fDo5mNdpiEVNbOF1E6TXfXks24baJo3otXQy2o/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwMOWnkMEyCidzpCz1uS67c1OpRCy5Hoo_tP9mnk1ERKSUeJCcF77_ACvHat03a_bCISA/exec";
+    
   
     try {
       const response = await fetch(scriptURL, {
@@ -36,10 +37,6 @@ const ContactUs = () => {
       alert("Failed to submit form. Please try again.");
     }
   };
-  
-  
-  
-
   return (
     <div style={{marginTop:"60px"}} className="contact-page">
       {/* Header Section */}
@@ -104,14 +101,16 @@ const ContactUs = () => {
             <a 
                 href="https://www.facebook.com/bctorg/" 
                 className="social-icon"
+                style={{color:"#1877F2"}}
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <i className="fab fa-facebook"></i>
+                <i  className="fab fa-facebook"></i>
             </a>
             <a 
                 href="https://x.com/bct_ngo" 
                 className="social-icon"
+                style={{color: "rgb(56, 53, 53)"}}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -120,6 +119,7 @@ const ContactUs = () => {
             <a 
                 href="https://www.instagram.com/bct_india/?hl=en" 
                 className="social-icon"
+                style={{color:"#E4405F"}}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -128,6 +128,7 @@ const ContactUs = () => {
             <a 
                 href="https://www.linkedin.com/company/bctindia/posts/?feedView=all" 
                 className="social-icon"
+                style={{color:"#0077B5"}}
                 target="_blank"
                 rel="noopener noreferrer"
             >

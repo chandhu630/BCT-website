@@ -105,15 +105,15 @@ const BlogDetails = () => {
         alt={post.title}
         className="blog-details-image"
       />
-      <p className="blog-dateDetails">Published on: {post.date}</p>
+      {/* <p className="blog-dateDetails">Published on: {post.date}</p> */}
       <h1 className="blog-title">{post.title}</h1>
       <div
         className="blog-contentDetails"
         dangerouslySetInnerHTML={{ __html: post.content }}
       ></div>
-      <button className="back-btn" onClick={() => navigate("/blog")}>
+      {/* <button className="back-btn" onClick={() => navigate("/blog")}>
         ← Back to Blogs
-      </button>
+      </button> */}
     </div>
   );
 };

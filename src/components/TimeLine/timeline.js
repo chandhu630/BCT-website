@@ -30,9 +30,9 @@ const Timeline = () => {
         "BCT starts community-based rehabilitation of people with disabilities with MIBLOU, Geneva, and Sanchar, Kolkata.",
     },
     1995: {
-      title: "Skill-Oriented Education",
+      title: "Skill-Oriented Education,KVK",
       content:
-        "BCT establishes a residential high school offering rurally-biased, skill-oriented, value-based education.",
+        "BCT establishes a residential high school offering rurally-biased, skill-oriented, value-based education.Sanctioned to BCT in 1995, the BCT Krishi Vigyan Kendra (BCT- KVK) works towards enhancing and improving agricultural outcomes for farmers.",
     },
     2003: {
       title: "Padayatra",
@@ -55,7 +55,7 @@ const Timeline = () => {
         "BCT partners with Tech Mahindra Foundation to establish SMART centers for peri-urban youth training.",
     },
     2019: {
-      title: "Prerana Initiative ,GIC",
+      title: "Prerana Initiative ,Grameena Incubation Centre",
       content:
         "BCT launches Farmer Field Schools and starts the Prerana initiative in tribal Paderu with Vibha Foundation and Sikshana Foundation.We incubate startups that can impact rural livelihoods in areas of Agriculture, Education, Handlooms/Handicrafts, Finance and Market Connects",
     },

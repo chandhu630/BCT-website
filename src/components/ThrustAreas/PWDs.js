@@ -48,7 +48,7 @@ const PWDs = () => {
         <div className="pwd-hero-content">
           <h1>REHAB OF PWDs</h1>
           <p style={{color:"white"}}>Enhancing agricultural outcomes and empowering farmers since 1995</p>
-          <div className="pwd-hero-buttons">
+          {/* <div className="pwd-hero-buttons">
              <Link 
               to="/support-us" 
               className="pwd-btn-primary"
@@ -61,7 +61,7 @@ const PWDs = () => {
             >
              Contact Us
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="pwd-statistics-section">
@@ -116,9 +116,17 @@ const PWDs = () => {
             <p>
               Operating in over 12 mandals, community-based rehabilitation takes care to the
               doorsteps of people in villages. Trained physiotherapists visit villages and provide
-              doorstep services, partnering with organizations like the Tata Relief Committee and
-              Heart and Hand for the Handicapped (USA).
+              doorstep services, partnering with organizations like the Azim premji Foundation 
+              Heart and Hand for the Handicapped(HHH) (USA).
             </p>
+            <ul className="items-pwd">
+              <li>Dedicated technical & community based organizers for</li>
+              <li>Both at the centers & at the home</li>
+              <li>
+                Providing of aids & appliances in 66 rural & 63 tribal villages.
+              </li>
+            
+            </ul>
             
           </div>
         </div>
@@ -140,8 +148,10 @@ const PWDs = () => {
             <ul className="items-pwd">
               <li>A peaceful learning environment in nature</li>
               <li>
-                A syllabus covering academics, vocational, and social animation skills
+                For Academics they are Integrated with the high school and (get a govt certificate) graduate after 10th.
               </li>
+              <li>Additionally they are given speech therapy classes.</li>
+              <li>These students also participate in the village animation program along with the high school students</li>
             
             </ul>
             

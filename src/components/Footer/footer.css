@@ -2,41 +2,31 @@
 .footer {
     background-color: #121212;
     width: 100%;
-    color: #fff;
+    color: rgb(199, 191, 191);
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    overflow: hidden; /* Prevents overflow of content */
-    margin-top: auto; /* Pushes the footer to the bottom */
-
-
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  z-index: 10; */
-
-
+    overflow: hidden; 
+    margin-top: auto;
+}
+.footer_bright
+{
+    color: rgb(199, 191, 191);
 }
 
 .ContactDetailsColor
 {
     text-decoration: none;
-    color: #666;
+    color: rgb(199, 191, 191);
 }
-
-/* Content inside footer fixed to 1200px width */
 .footer_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
-    max-width: 1500px; /* Fixed content width for the footer */
-    margin: 0 auto; /* Center the footer content */
+    max-width: 1500px;
+    margin: 0 auto; 
     box-sizing: border-box;
 }
 
@@ -84,20 +74,14 @@
 }
 
 .footer-links a {
-    color: #666;
+    color: rgb(199, 191, 191);
     text-decoration: none;
     transition: color 0.3s;
 }
-
-/* .footer-links a:hover {
-    color: #15926a;
-} */
-
 .icon {
     color: #c64848;
     margin-right: 10px;
 }
-
 .newsletter-button {
     padding: 12px 60px;
     background-color: #15926a;
@@ -140,12 +124,9 @@
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
-
-
 .social-icons:hover {
     transform: scale(1.2);
 }
-
 /* Footer Bottom Links */
 .footer-bottom-links {
     list-style: none;
@@ -153,19 +134,17 @@
     gap: 15px;
     padding: 0;
 }
-
 .footer-bottom-links a {
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .footer-bottom-links a:hover {
     color: #15926a;
 }
 .newsletter-footer{
     text-decoration: none;
-    color: #666;
+    color: rgb(199, 191, 191);
 
 }
 /* Footer Container for Medium Screens */

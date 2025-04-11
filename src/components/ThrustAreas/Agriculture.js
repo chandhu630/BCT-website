@@ -82,7 +82,7 @@ const Agriculture = () => {
           <h1>BCT Krishi Vigyan Kendra</h1>
           <p>Enhancing agricultural outcomes and empowering farmers since 1995</p>
           
-          <div className="hero-buttons-agri">
+          {/* <div className="hero-buttons-agri">
           <Link 
               to="/support-us" 
               className="btn-primary_BctAgri "
@@ -95,7 +95,7 @@ const Agriculture = () => {
             >
              Contact Us
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Statistics Section */}

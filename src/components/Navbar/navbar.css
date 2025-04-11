@@ -173,11 +173,13 @@
 }
 .fas.fa-chevron-down {
   margin-left: 5px;
+  font-size:15px;
   color: var(--primary);
 }
 
 .fas.fa-chevron-right {
   margin-left: 5px;
+  font-size:15px;
   color: var(--primary);
 }
 .hamburger {
@@ -211,7 +213,7 @@
   }
   
   .nav-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media(max-width: 1180px) {

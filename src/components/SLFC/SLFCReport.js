@@ -49,7 +49,8 @@ const SlfcHero = () => {
               </div>
               <div className="card-content">
                 <h3>Agricultural Development</h3>
-                <p>Training 1,341 farmers in sustainable and eco-friendly farming techniques.</p>
+                <p>2200 formers in tribal & 1550 formers in rural areas for
+                sustainable and eco-friendly farming techniques.</p>
               </div>
             </div>
 
@@ -84,21 +85,22 @@ const SlfcHero = () => {
           <div className="slfc-impact-grid" style={{marginTop:"50px"}}>
             <div className="slfc-impact-card">
               <FaSeedling className="slfc-icon" style={{ fontSize: "30px", color: "#EC4342" }} />
-              <div className="impact-number">7.54%</div>
               <h3>Yield Increase</h3>
-              <p style={{color:"white"}}>In paddy yield through improved farming practices.</p>
+
+              <div className="impact-number">An average of 7.54% increase in paddy yield in tribal & rural areas. </div>
+              {/* <p style={{color:"white"}}>In paddy yield through improved farming practices.</p> */}
             </div>
             <div className="slfc-impact-card">
               <FaRupeeSign className="slfc-icon" style={{ fontSize: "30px", color: "#EC4342" }} />
-              <div className="impact-number">8.09%</div>
               <h3>Cost Reduction</h3>
-              <p  style={{color:"white"}}>For vegetable farming through eco-friendly pest control.</p>
+              <div className="impact-number">8.09% of cost reduction invegetable farming through eco-friendly pest control.</div>
+              {/* <p  style={{color:"white"}}>For vegetable farming through eco-friendly pest control.</p> */}
             </div>
             <div className="slfc-impact-card">
               <FaWheelchair className="slfc-icon" style={{ fontSize: "30px", color: "#EC4342" }} />
-              <div className="impact-number">100%</div>
               <h3>Rehabilitation</h3>
-              <p  style={{color:"white"}}>For PwDs, ensuring improved mobility and income opportunities.</p>
+              <div className="impact-number">74% of pwds were given aids & appliances & livelihood support </div>
+              {/* <p  style={{color:"white"}}>For PwDs, ensuring improved mobility and income opportunities.</p> */}
             </div>
           </div>
         </div>

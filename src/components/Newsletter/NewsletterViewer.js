@@ -167,8 +167,8 @@ const NewsletterViewer = () => {
       <div className="controls-bar">
         <div className="left-controls">
           <button onClick={toggleSinglePage} className="control-button">
-            <i className="fas fa-file"></i>
-            <span>Single page</span>
+            {/* <i className="fas fa-file"></i>
+            <span>Single page</span> */}
           </button>
           <button onClick={toggleSound} className="control-button">
             <i className={`fas fa-volume-${isSoundEnabled ? 'up' : 'mute'}`}></i>
